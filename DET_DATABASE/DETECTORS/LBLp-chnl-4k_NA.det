@@ -1,0 +1,14 @@
+[INFO]
+Type="LBLp-chnl-4k"
+SerialNumber=N/A
+Dark_Current="0.026 e-/s (150 K)"
+Comments=""
+Grade=Science
+DetID=PB2213
+Read_NoiseA=8.0 (electrons)
+Read_NoiseB=8.0 (electrons)
+GainA=1.0 (adu/electrons)
+GainB=1.0 (adu/electrons)
+SaturateA=170000 (adu)
+SaturateB=170000 (adu)
+ExtID=_concat_ info(PosID)

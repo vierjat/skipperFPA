@@ -1,0 +1,12 @@
+WCS     ='WCS CUSTOM DES2          	' / WCS coordinates to use
+DETECTOR='(STR)   detinfo DetID		' / Detector Identifier
+DETPOS  ='detinfo PosID                 ' / detector position ID
+FPA     ='fpainfo id           		' / focal plane array info
+GAINA   ='(FLOAT) detinfo GainA  	' / Gain for Amp A 
+RDNOISEA='(FLOAT) detinfo Read_NoiseA  	' / Read Noise for Amp A 
+SATURATA='(FLOAT) detinfo SaturateA     ' / Saturation for Amp A
+GAINB   ='(FLOAT) detinfo GainB  	' / Gain for Amp B 
+RDNOISEB='(FLOAT) detinfo Read_NoiseB   ' / Read Noise for Amp B 
+SATURATB='(FLOAT) detinfo SaturateB     ' / Saturation for Amp B
+CRPIX1  ='(FLOAT) detinfo CRPIX1        ' / Coordinate Reference axis 1
+CRPIX2  ='(FLOAT) detinfo CRPIX2        ' / Coordinate Reference axis 2

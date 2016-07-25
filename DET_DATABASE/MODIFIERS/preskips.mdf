@@ -1,0 +1,6 @@
+[PRESKIPS]
+header="PRESKIP"
+binned=no
+where=predata
+add_in=columns
+comment="preskip pixels"

@@ -1,0 +1,433 @@
+## PAN Attribute Name,DHE Func Name,Base Address,Number of elements,Creg,Set Method,Read Method,PANType,DHEType,Coef1,Coef2,Function ID,Min Value,Max Value,UnitName,HelpText
+mosaicCols, , ,1,0x01000000,SIMPLE,SIMPLE,FLOAT,NONE,1,0,LINEAR,0,65535, ,Number of arrays in the X or width direction
+expEndTime, , ,1,0x02000000,SIMPLE,SIMPLE,FLOAT,NONE,1,0,LINEAR,0,2999999999, ,The msd end time of the observation
+totFrames, , ,1,0x02000000,SIMPLE,SIMPLE,FLOAT,NONE,1,0,LINEAR,0,65535, ,Number of frames produced by each startExp before processing
+finDataType, , ,1,0x02000000,SIMPLE,SIMPLE,FLOAT,NONE,1,0,LINEAR,-64,64, ,data type of a finished pixel
+imageDir, , ,1,0x03000000,STRINGSET,STRINGSET,STRING,NONE,1,0,NONE, , , ,The directory to store image files in.
+arrFdir, , ,1,0x03000000,STRINGSET,STRINGSET,STRING,NONE,1,0,NONE, , , ,The directory containing the default array configuration file (.arr)
+expStrtTime, , ,1,0x02000000,SIMPLE,SIMPLE,FLOAT,NONE,1,0,LINEAR,0,2999999999, ,The msd startime of the observation
+rdOutTime, , ,7,0x02000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,1073741823,mSec,The time it takes to read the detector once (array provides for dig Avgs)
+yPostScan, , ,1,0x01000000,SIMPLE,SIMPLE,FLOAT,NONE,1,0,LINEAR,0,65535, ,Number of detector post scan rows
+captureMode, , ,1,0x02000000,SIMPLE,SIMPLE,FLOAT,NONE,1,0,LINEAR,0,65535, ,Software mode to use when capturing data
+expFdir, , ,1,0x03000000,STRINGSET,STRINGSET,STRING,NONE,1,0,NONE, , , ,The directory containing the default exposure configuration file (.exp)
+daq_pat_addr, , ,1,0x00000000,STRINGSET,STRINGSET,STRING,NONE,1,0,NONE, , ,Boolean,Card type function
+xStart, , ,18,0x01000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,65535, ,The starting column position of the portion of the focal plane being sent to the DHS or file system.
+imageCount, , ,1,0x02000000,SIMPLE,SIMPLE,FLOAT,NONE,1,0,LINEAR,0,4294967295, ,Total number of images saved to disk during this session
+idpFdir, , ,1,0x03000000,STRINGSET,STRINGSET,STRING,NONE,1,0,NONE, , , ,The directory to search for data disposition files
+xPostScan, , ,1,0x01000000,SIMPLE,SIMPLE,FLOAT,NONE,1,0,LINEAR,0,65535, ,Number of detector column post scan pixels
+arrFname, , ,1,0x03000000,STRINGSET,STRINGSET,STRING,NONE,1,0,NONE, , , ,The default download file that describes the array parameter attributes.
+avNameSize, , ,1,0x03000000,SIMPLE,SIMPLE,FLOAT,NONE,1,0,LINEAR,0,65535, ,The number of characters in the AV pair array Name column
+filename, , ,1,0x03000000,STRINGSET,STRINGSET,STRING,NONE,1,0,NONE, , , ,The base image file name without counters and PAN ID formats
+idpFname, , ,1,0x03000000,STRINGSET,STRINGSET,STRING,NONE,1,0,NONE, , , ,The default download file that describes the data disposition parameter attributes.
+dwnLdFDir, , ,1,0x03000000,STRINGSET,STRINGSET,STRING,NONE,1,0,NONE, , , ,The directory containing the default DHE download configuration files (.ucd)
+imageCols, , ,1,0x01000000,SIMPLE,SIMPLE,FLOAT,NONE,1,0,LINEAR,0,65535, ,Number of columns in the entire image (XSize or width)
+processMode, , ,1,0x02000000,SIMPLE,SIMPLE,FLOAT,NONE,1,0,LINEAR,0,65535, ,Software mode and algorithm to use when processing data
+rawPxlSize, , ,1,0x02000000,SIMPLE,SIMPLE,FLOAT,NONE,1,0,LINEAR,0,4, ,Sets the Size of raw pixel data width in bytes
+expFname, , ,1,0x03000000,STRINGSET,STRINGSET,STRING,NONE,1,0,NONE, , , ,The default download file that describes the exposure parameter attributes.
+outputCfg, , ,1,0x01000000,SIMPLE,SIMPLE,FLOAT,NONE,1,0,LINEAR,0,2, ,output configuration (0=AB or CD
+dwnLdFname, , ,1,0x03000000,STRINGSET,STRINGSET,STRING,NONE,1,0,NONE, , , ,The default DHE download file (usually set to a sequencer code file).
+shutterState, , ,1,0x04000000,SIMPLE,SIMPLE,FLOAT,NONE,1,0,LINEAR,0,0xFFFFFFFF, ,A set of flags which determine how the shutter will be controlled
+yStart, , ,18,0x01000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,65535, ,The starting row position of the portion of the focal plane being sent to the DHS or file system
+avCommentSize, , ,1,0x03000000,SIMPLE,SIMPLE,FLOAT,NONE,1,0,LINEAR,0,65535, ,The number of characters in the AV pair array Name column
+expID, , ,1,0x02000000,STRINGSET,STRINGSET,STRING,NONE,1,0,NONE, , , ,A unique identifier used for each exposure.
+avValueSize, , ,1,0x03000000,SIMPLE,SIMPLE,FLOAT,NONE,1,0,LINEAR,0,65535, ,The number of characters in the AV pair array Value column
+mosaicRows, , ,1,0x01000000,SIMPLE,SIMPLE,FLOAT,NONE,1,0,LINEAR,0,65535, ,Number of arrays in the Y or height direction.
+finPxlSize, , ,1,0x02000000,SIMPLE,SIMPLE,FLOAT,NONE,1,0,LINEAR,0,4, ,Sets the Size of finished pixel data width in bytes
+expVector, , ,1,0x04000000,SIMPLE,SIMPLE,FLOAT,ULONG,1,0,LINEAR,0,255, ,The  30 bit value to write down when doing an startExp command
+imageFile, , ,1,0x03000000,STRINGSET,STRINGSET,STRING,NONE,1,0,NONE, , , ,The current image file name with counters and PAN ID preamble
+modeFdir, , ,1,0x03000000,STRINGSET,STRINGSET,STRING,NONE,1,0,NONE, , , ,The directory to use when searching for mode files
+numOutputs, , ,1,0x01000000,SIMPLE,SIMPLE,FLOAT,NONE,1,0,LINEAR,1,4, ,Number of video outputs per detector
+arrayID, , ,1,0x01000000,STRINGSET,STRINGSET,STRING,NONE,1,0,NONE, , , ,The string array Identifier
+clock_pat_addr, , ,1,0,STRINGSET,STRINGSET,STRING,NONE,1,0,NONE, , ,Boolean,Card type function
+pxlCols, , ,1,0x01000000,SIMPLE,SIMPLE,FLOAT,NONE,1,0,LINEAR,0,65535, ,Number of columns in one detector (XSize or width)
+digAvgs, , ,1,0x03000000,DIGAVG,SIMPLE,FLOAT,NONE,1,0,LINEAR,1,64, ,Defines a function for setting the digital average method
+xPreScan, , ,1,0x01000000,SIMPLE,SIMPLE,FLOAT,NONE,1,0,LINEAR,0,65535, ,Number of detector column prescan pixels
+asyncVector, , ,1,0x04000000,SIMPLE,SIMPLE,FLOAT,ULONG,1,0,LINEAR,0,0x3FFFFFFF, ,The  30 bit value to write down when doing an asyncronous response command
+labSystem, , ,1,0x03000000,SIMPLE,SIMPLE,FLOAT,NONE,1,0,LINEAR,0,8,FLAG,Set to one for filenames without the 12digit MSD
+arrayType, , ,1,0x01000000,STRINGSET,STRINGSET,STRING,NONE,1,0,NONE, , , ,The string name of the array type
+expMode, , ,1,0x04000000,SIMPLE,SIMPLE,FLOAT,NONE,1,0,LINEAR,0,0xFFFFFFFF, ,The Mode of the Exposure used to key the Capture and process Modes
+frmsPerRdOut, , ,1,0x02000000,SIMPLE,SIMPLE,FLOAT,NONE,1,0,LINEAR,0,64, ,number of frames produced by a readout cycle with fSamples==1
+imageRows, , ,1,0x01000000,SIMPLE,SIMPLE,FLOAT,NONE,1,0,LINEAR,0,65535, ,Number of rows in the entire image (YSize or height)
+pxlsPerImage, , ,1,0x01000000,SIMPLE,SIMPLE,FLOAT,NONE,1,0,LINEAR,0,4294836225, ,Number of pixels in an image
+pxlRows, , ,1,0x01000000,SIMPLE,SIMPLE,FLOAT,NONE,1,0,LINEAR,0,65535, ,Number of rows in one detector (YSize or height)
+modeFname,21, ,1,0x03000000,STRINGSET,STRINGSET,STRING,NONE,1,0,NONE, , , ,The current mode file that was last loaded
+#,,,,,,,,,,,,,,,
+#,,,,,,,,,,,,,,,
+##,,,,,,,,,,,,,,,
+## Cardtype - MCB,,,,,,,,,,,,,,,
+dheMstr,SL1_DHE_MASTER,0x001FFFC,1,0x06000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,16,0,LINEAR,0,7,Boolean,Writing a one to this function establishes the DHE as Master.
+mcbBkplnSlct,SL1_MCB_BCKPLN_SLCT,0x0010100,1,0x06000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,32768,0,LINEAR,0,1,Boolean,Set this function to 1 when using MCB in an 8 slot Schroff Backplane
+mcbClkCtrl,SL1_MCB_CLKCTRL,0x0010281,1,0x06000000,SIMPLE,SIMPLE,FLOAT,UCHAR,1,0,LINEAR,0,65535,Value,Control register for Sysclk Control
+mcbClkEnables,SL1_MCB_CLKENABLES,0x0010100,1,0x06000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,255,Value,Writing bits to this register controls the global clock sourcing of SYSCLK to peripheral boards
+mcbClkInCtl,SL1_MCB_CLKINCTL,0x0010281,1,0x06000000,RDMSKWRT,RDMSKWRT,FLOAT,UCHAR,8,0,LINEAR,0,15,Value,Provides control to synchronize the input sysclk. Units are delays approx equal to 960ps.
+mcbClkOutCtl,SL1_MCB_CLKOUTCTL,0x0010281,1,0x06000000,RDMSKWRT,RDMSKWRT,FLOAT,UCHAR,1,0,LINEAR,0,15,Value,Provides control to synchronize the outgoing System Clock (i.e to a slave DHE). Units are delays approx equal to 960ps.
+controlMcb,SL1_MCB_CONTROL,0x001FFFC,1,0x06000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,1,0,LINEAR,0,65535,Boolean,Read / write the global control register for the board
+mcbErrorEvents,SL1_MCB_DBG_REG_1,0x0010288,1,0x06000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,4294967295,Value,Number of RM_SUSPEND_N events that have occured during a frame. Write stack number to this register to access other events on stack
+mcbTimeOfEvent,SL1_MCB_DBG_REG_2,0x0010289,1,0x06000000,NOMETHOD,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,4294967295,mSec,Stack of 16 event registers that show the time of the event occurence
+mcbDurationOfEvent,SL1_MCB_DBG_REG_3,0x001028A,1,0x06000000,NOMETHOD,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,4294967295,usec,Stack of 16 event registers that show the duration of each event occurence
+mcbFrameTime,SL1_MCB_DBG_REG_4,0x001028B,1,0x06000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,4294967295,mSec,Total time of frame
+DoubleXfers,SL1_MCB_DBLPIX_XFER,0x00102FC,1,0x06000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,1,0,LINEAR,0,1,Boolean,Enables double pixel data transfers to the systran i.e. 2 x 16 bit pixel values per xfer
+firmwareVerMcb,SL1_MCB_FIRMVERS,0x001FFFF,1,0x06000000,NOMETHOD,SIMPLE,FLOAT,UINT,100,0,LINEAR,0,655.35,Value,Read the board firmware version register
+boardIdentityMcb,SL1_MCB_IDENT,0x001FFFE,1,0,NOMETHOD,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,65535,Value,Read the board identity register
+mcbFpdpWrt,SL1_MCB_PIX_LED_1,0x0010282,1,0x06000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,1,0,LINEAR,0,1,Boolean,Controls pixel indicator led  1 - Assigned to the FPDP WRT strobe
+mcbFpdpBusy,SL1_MCB_PIX_LED_2,0x0010282,1,0x06000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,2,0,LINEAR,0,1,Boolean,Controls pixel indicator led 2 - Assigned to the FPDP BUSY signal
+mcbPixDataRdy,SL1_MCB_PIX_LED_3,0x0010282,1,0x06000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,4,0,LINEAR,0,1,Boolean,Controls pixel indicator led 3 - Assigned to PIX DATA READY signal
+rebootMcb,SL1_MCB_REBOOT,0x001FFFF,1,0x06000000,SIMPLE,NOMETHOD,FLOAT,UINT,1,0,LINEAR,0,1,Boolean,Reboot the board firmware
+resetMcb,SL1_MCB_RESET,0x001FFFE,1,0x06000000,SIMPLE,NOMETHOD,FLOAT,UINT,1,0,LINEAR,0,1,Boolean,Soft reset the board firmware
+mcbFpdpRcvDataValid,SL1_MCB_SEQ_LED_1,0x001FFF9,1,0x06000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,1,0,LINEAR,0,1,Boolean,Controls MCB status indicator led 1 - Assigned to FPDP RECV DATA VALID signal
+mcbPanBusReq,SL1_MCB_SEQ_LED_2,0x001FFF9,1,0x06000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,2,0,LINEAR,0,1,Boolean,Controls MCB status indicator led 2 - Assigned to PAN SEQ BUS REQ signal
+mcbMpuSeqBusReq,SL1_MCB_SEQ_LED_3,0x001FFF9,1,0x06000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,4,0,LINEAR,0,1,Boolean,Controls MCB status indicator led 3
+serialNumMcb,SL1_MCB_SERNUM,0x001FFFA,1,0x06000000,NOMETHOD,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,4294967295,Value,Read the silicon serial number of the board
+statusMcb,SL1_MCB_STATUS,0x001FFFD,1,0x06000000,NOMETHOD,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,65535,Boolean,Read the status register for the board
+temperatureMcb,SL1_MCB_TEMPERATURE,0x001FFFB,1,0x06000000,NOMETHOD,WRT2READ,FLOAT,TWLVBIT,10,0,LINEAR,-128,128,Deg.C,Read the actual temperature of the board
+mpuSeqClkDiv,SL1_SEQ_CLKDIV,0x001FFFC,1,0x06000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,4,0,LINEAR,0,3,Value,Read / write to the sequencer MPU master clock divider
+seqCmds,SL1_SEQ_CMDS,0x0010102,1,0x07000000,NOMETHOD,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,65535,Value,Reading this register returns the global data in the sequencer control register
+mpuStrtVctr,SL1_SEQ_CMD_STARTVCTR,0x0010102,1,0x07000000,NOMETHOD,RDMSKWRT,FLOAT,UINT,16,0,LINEAR,0,255,Boolean,Reading this function returns the start exposure vector in the sequencer control register
+contRun,SL1_SEQ_CMD_USER0,0x0010102,1,0x07000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,4096,0,LINEAR,0,1,Boolean,This function sets or reads the sequencer user bit 0 in the sequencer control register
+Usr1Flag,SL1_SEQ_CMD_USER1,0x0010102,1,0x07000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,8192,0,LINEAR,0,1,Boolean,This function sets or reads the sequencer user bit 1 in the sequencer control register
+Usr2Flag,SL1_SEQ_CMD_USER2,0x0010102,1,0x07000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,16384,0,LINEAR,0,1,Boolean,This function sets or reads the sequencer user bit 2 in the sequencer control register
+Usr3Flag,SL1_SEQ_CMD_USER3,0x0010102,1,0x07000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,32768,0,LINEAR,0,1,Boolean,This function sets or reads the sequencer user bit 3 in the sequencer control register
+mcbSeqEnable,SL1_SEQ_ENABLE,0x001FFFC,1,0x07000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,1,0,LINEAR,0,1,Boolean,Writing a one to this function enables the sequencer MPU to run.
+mpuIntPause,SL1_SEQ_INTPAUSE,0x001FFFC,1,0x07000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,2,0,LINEAR,0,1,Boolean,1 => pauses the integration timer; 0 =>  allows the timer to continue
+actIntTime,SL1_SEQ_ITC,0x0010101,1,0x04000000,NOMETHOD,SIMPLE,FLOAT,UINT,1000,0,LINEAR,0,4294967296,Second,Reading this register returns the agregate integration time. Timing resolution is 1 millisecond.
+intTime,SL1_SEQ_ITR,0x0010000,1,0x04000000,SIMPLE,SIMPLE,FLOAT,UINT,1000,0,LINEAR,0,4294967.3,Second,Set this register to the desired total integration time of an exposure. Timing resolution is 1 millisecond
+rows,SL1_SEQ_LOOPREG_0,0x0010110,1,0x07000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,65535,Value,Read / write to loop register 0
+cols,SL1_SEQ_LOOPREG_1,0x0010111,1,0x07000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,65535,Value,Read / write to loop register 1
+SW_WIDTH,SL1_SEQ_LOOPREG_10,0x001011A,1,0x07000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,65535,Value,Read / write to loop register 10
+POST_SW,SL1_SEQ_LOOPREG_11,0x001011B,1,0x07000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,65535,Value,Read / write to loop register 11
+PRE_CTC,SL1_SEQ_LOOPREG_12,0x001011C,1,0x07000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,65535,Value,Read / write to loop register 12
+POST_CTC,SL1_SEQ_LOOPREG_13,0x001011D,1,0x07000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,65535,Value,Read / write to loop register 13
+CLEAR_CNT,SL1_SEQ_LOOPREG_14,0x001011E,1,0x07000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,65535,Value,Read / write to loop register 14
+POST_H_CLK,SL1_SEQ_LOOPREG_15,0x001011F,1,0x07000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,65535,Value,Read / write to loop register 15
+H_SPECIAL,SL1_SEQ_LOOPREG_16,0x0010120,1,0x07000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,65535,Value,Read / write to loop register 4
+DELAY_1,SL1_SEQ_LOOPREG_17,0x0010121,1,0x07000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,65535,Value,Read / write to loop register 5
+DELAY_2,SL1_SEQ_LOOPREG_18,0x0010122,1,0x07000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,65535,Value,Read / write to loop register 6
+ROI_PRE_ROW,SL1_SEQ_LOOPREG_19,0x0010124,1,0x07000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,65535,Value,Read / write to loop register 4
+rowBin,SL1_SEQ_LOOPREG_2,0x0010112,1,0x07000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,65535,Value,Read / write to loop register 2
+ROI_PRE_COLUMN,SL1_SEQ_LOOPREG_20,0x0010125,1,0x07000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,65535,Value,Read / write to loop register 5
+ROI_POST_ROW,SL1_SEQ_LOOPREG_21,0x0010126,1,0x07000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,65535,Value,Read / write to loop register 6
+ROI_POST_COLUMN,SL1_SEQ_LOOPREG_22,0x0010127,1,0x07000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,65535,Value,Read / write to loop register 7
+colBin,SL1_SEQ_LOOPREG_3,0x0010113,1,0x07000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,65535,Value,Read / write to loop register 3
+##RG_WIDTH,SL1_SEQ_LOOPREG_4,0x0010114,1,0x07000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,65535,Value,Read / write to loop register 4
+##POST_RG,SL1_SEQ_LOOPREG_5,0x0010115,1,0x07000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,65535,Value,Read / write to loop register 5
+ROWS_CLEAR,SL1_SEQ_LOOPREG_4,0x0010114,1,0x07000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,65535,Value,Read / write to loop register 4
+ROWBIN_CLEAR,SL1_SEQ_LOOPREG_5,0x0010115,1,0x07000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,65535,Value,Read / write to loop register 5
+H_OVERLAP,SL1_SEQ_LOOPREG_6,0x0010116,1,0x07000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,65535,Value,Read / write to loop register 6
+V_OVERLAP,SL1_SEQ_LOOPREG_7,0x0010117,1,0x07000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,65535,Value,Read / write to loop register 7
+INTEG_WIDTH,SL1_SEQ_LOOPREG_8,0x0010118,1,0x07000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,65535,Value,Read / write to loop register 8
+PRE_SW,SL1_SEQ_LOOPREG_9,0x0010119,1,0x07000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,65535,Value,Read / write to loop register 9
+mcbSeqPatMem,SL1_SEQ_PAT_MEM,0x0011000,1,0x07000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,65535,Value,Sequencer pattern memory space (Note actual mem size is 4096 locations)
+mcbSeqPgmMem,SL1_SEQ_PGM_MEM,0x0014000,1,0x07000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,65535,Value,Sequencer program memory space (Note actual mem size is 1024 locations)
+mstrSyncDly,SL1_SEQ_SYNCDELAY,0x001FFFC,1,0x07000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,256,0,LINEAR,0,255,Value,Sets the delay time after receiving a start exposure command and issuing a master sync pulse between 0 and 256 milliseconds
+##,,,,,,,,,,,,,,,
+##,,,,,,,,,,,,,,,
+##,,,,,,,,,,,,,,,
+## Cardtype - CB,,,,,,,,,,,,,,,
+SL3_A_H1L,SL3_A_H1L,0x0040000,1,0x0E000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,4096,0,LINEAR,0,1,Boolean,This function provides direct control of the clock signal CLKOUT[1]
+SL3_A_H1L_HiDac,SL3_A_H1L_HiDac,0x0040118,1,0x0E000000,SIMPLE,SIMPLE,FLOAT,UINT,10.539,127.816,LINEAR,-10.12,14.01,Volt,Clock rail high voltage DAC register for channel 1
+SL3_A_H1L_LowDac,SL3_A_H1L_LowDac,0x0040119,1,0x0E000000,SIMPLE,SIMPLE,FLOAT,UINT,10.55,127.711,LINEAR,-10.1,14.08,Volt,Clock rail low voltage DAC register for channel 1
+SL3_A_H1L_Tel,SL3_A_H1L_Tel,0x0040286,1,0x0E000000,NOMETHOD,WRT2READ,FLOAT,TWLVBIT,102.4,0,LINEAR,-15,15,Volt,Reads the voltage telemetry data for clock channel 1
+SL3_A_H1U,SL3_A_H1U,0x0040000,1,0x0E000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,8192,0,LINEAR,0,1,Boolean,This function provides direct control of the clock signal CLKOUT[1]
+SL3_A_H1U_HiDac,SL3_A_H1U_HiDac,0x0040114,1,0x0E000000,SIMPLE,SIMPLE,FLOAT,UINT,10.555,127.869,LINEAR,-10.16,14.02,Volt,Clock rail high voltage DAC register for channel 1
+SL3_A_H1U_LowDac,SL3_A_H1U_LowDac,0x0040115,1,0x0E000000,SIMPLE,SIMPLE,FLOAT,UINT,10.545,127.869,LINEAR,-10.13,14.09,Volt,Clock rail low voltage DAC register for channel 1
+SL3_A_H1U_Tel,SL3_A_H1U_Tel,0x0040285,1,0x0E000000,NOMETHOD,WRT2READ,FLOAT,TWLVBIT,102.4,0,LINEAR,-15,15,Volt,Reads the voltage telemetry data for clock channel 1
+SL3_A_H2,SL3_A_H2,0x0040000,1,0x0E000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,1073741824,0,LINEAR,0,1,Boolean,This function provides direct control of the clock signal CLKOUT[1]
+SL3_A_H2_HiDac,SL3_A_H2_HiDac,0x004012A,1,0x0E000000,SIMPLE,SIMPLE,FLOAT,UINT,10.545,127.764,LINEAR,-10.11,14.02,Volt,Clock rail high voltage DAC register for channel 1
+SL3_A_H2_LowDac,SL3_A_H2_LowDac,0x004012B,1,0x0E000000,SIMPLE,SIMPLE,FLOAT,UINT,10.555,127.553,LINEAR,-10.05,14.09,Volt,Clock rail low voltage DAC register for channel 1
+SL3_A_H2_Tel,SL3_A_H2_Tel,0x0040296,1,0x0E000000,NOMETHOD,WRT2READ,FLOAT,TWLVBIT,102.4,0,LINEAR,-15,15,Volt,Reads the voltage telemetry data for clock channel 1
+SL3_A_H3L,SL3_A_H3L,0x0040000,1,0x0E000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,16384,0,LINEAR,0,1,Boolean,This function provides direct control of the clock signal CLKOUT[1]
+SL3_A_H3L_HiDac,SL3_A_H3L_HiDac,0x0040116,1,0x0E000000,SIMPLE,SIMPLE,FLOAT,UINT,10.513,127.763,LINEAR,-10.13,14.01,Volt,Clock rail high voltage DAC register for channel 1
+SL3_A_H3L_LowDac,SL3_A_H3L_LowDac,0x0040117,1,0x0E000000,SIMPLE,SIMPLE,FLOAT,UINT,10.503,127.553,LINEAR,-10.1,14.08,Volt,Clock rail low voltage DAC register for channel 1
+SL3_A_H3L_Tel,SL3_A_H3L_Tel,0x0040293,1,0x0E000000,NOMETHOD,WRT2READ,FLOAT,TWLVBIT,102.4,0,LINEAR,-15,15,Volt,Reads the voltage telemetry data for clock channel 1
+SL3_A_H3U,SL3_A_H3U,0x0040000,1,0x0E000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,32768,0,LINEAR,0,1,Boolean,This function provides direct control of the clock signal CLKOUT[1]
+SL3_A_H3U_HiDac,SL3_A_H3U_HiDac,0x0040110,1,0x0E000000,SIMPLE,SIMPLE,FLOAT,UINT,10.534,127.658,LINEAR,-10.13,14.02,Volt,Clock rail high voltage DAC register for channel 1
+SL3_A_H3U_LowDac,SL3_A_H3U_LowDac,0x0040111,1,0x0E000000,SIMPLE,SIMPLE,FLOAT,UINT,10.529,127.711,LINEAR,-10.09,14.27,Volt,Clock rail low voltage DAC register for channel 1
+SL3_A_H3U_Tel,SL3_A_H3U_Tel,0x004028A,1,0x0E000000,NOMETHOD,WRT2READ,FLOAT,TWLVBIT,102.4,0,LINEAR,-15,15,Volt,Reads the voltage telemetry data for clock channel 1
+SL3_A_RG,SL3_A_RG,0x0040000,1,0x0E000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,65536,0,LINEAR,0,1,Boolean,This function provides direct control of the clock signal CLKOUT[1]
+SL3_A_RG_HiDac,SL3_A_RG_HiDac,0x004010A,1,0x0E000000,SIMPLE,SIMPLE,FLOAT,UINT,10.561,127.394,LINEAR,-10.13,14.01,Volt,Clock rail high voltage DAC register for channel 1
+SL3_A_RG_LowDac,SL3_A_RG_LowDac,0x004010B,1,0x0E000000,SIMPLE,SIMPLE,FLOAT,UINT,10.539,127.5,LINEAR,-10.11,14.08,Volt,Clock rail low voltage DAC register for channel 1
+SL3_A_RG_Tel,SL3_A_RG_Tel,0x004028C,1,0x0E000000,NOMETHOD,WRT2READ,FLOAT,TWLVBIT,102.4,0,LINEAR,-15,15,Volt,Reads the voltage telemetry data for clock channel 1
+SL3_A_SW,SL3_A_SW,0x0040000,1,0x0E000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,131072,0,LINEAR,0,1,Boolean,This function provides direct control of the clock signal CLKOUT[1]
+SL3_A_SW_HiDac,SL3_A_SW_HiDac,0x0040112,1,0x0E000000,SIMPLE,SIMPLE,FLOAT,UINT,10.524,127.763,LINEAR,-10.11,14.03,Volt,Clock rail high voltage DAC register for channel 1
+SL3_A_SW_LowDac,SL3_A_SW_LowDac,0x0040113,1,0x0E000000,SIMPLE,SIMPLE,FLOAT,UINT,10.534,127.869,LINEAR,-10.08,14.11,Volt,Clock rail low voltage DAC register for channel 1
+SL3_A_SW_Tel,SL3_A_SW_Tel,0x0040290,1,0x0E000000,NOMETHOD,WRT2READ,FLOAT,TWLVBIT,102.4,0,LINEAR,-15,15,Volt,Reads the voltage telemetry data for clock channel 1
+SL3_A_TG,SL3_A_TG,0x0040000,1,0x0E000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,8,0,LINEAR,0,1,Boolean,This function provides direct control of the clock signal CLKOUT[1]
+SL3_A_TG_HiDac,SL3_A_TG_HiDac,0x0040108,1,0x0E000000,SIMPLE,SIMPLE,FLOAT,UINT,10.545,127.658,LINEAR,-10.09,14.03,Volt,Clock rail high voltage DAC register for channel 1
+SL3_A_TG_LowDac,SL3_A_TG_LowDac,0x0040109,1,0x0E000000,SIMPLE,SIMPLE,FLOAT,UINT,10.561,127.711,LINEAR,-10.07,14.1,Volt,Clock rail low voltage DAC register for channel 1
+SL3_A_TG_Tel,SL3_A_TG_Tel,0x0040284,1,0x0E000000,NOMETHOD,WRT2READ,FLOAT,TWLVBIT,102.4,0,LINEAR,-15,15,Volt,Reads the voltage telemetry data for clock channel 1
+SL3_A_V1,SL3_A_V1,0x0040000,1,0x0E000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,1,0,LINEAR,0,1,Boolean,This function provides direct control of the clock signal CLKOUT[0]
+SL3_A_V1_HiDac,SL3_A_V1_HiDac,0x0040100,1,0x0E000000,SIMPLE,SIMPLE,FLOAT,UINT,10.566,127.553,LINEAR,-10.12,14.01,Volt,Clock rail high voltage DAC register for channel 0
+SL3_A_V1_LowDac,SL3_A_V1_LowDac,0x0040101,1,0x0E000000,SIMPLE,SIMPLE,FLOAT,UINT,10.555,127.553,LINEAR,-10.08,14.09,Volt,Clock rail low voltage DAC register for channel 0
+SL3_A_V1_Tel,SL3_A_V1_Tel,0x004028B,1,0x0E000000,NOMETHOD,WRT2READ,FLOAT,TWLVBIT,102.4,0,LINEAR,-15,15,Volt,Reads the voltage telemetry data for clock channel 0
+SL3_A_V2,SL3_A_V2,0x0040000,1,0x0E000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,2,0,LINEAR,0,1,Boolean,This function provides direct control of the clock signal CLKOUT[1]
+SL3_A_V2_HiDac,SL3_A_V2_HiDac,0x0040102,1,0x0E000000,SIMPLE,SIMPLE,FLOAT,UINT,10.518,127.816,LINEAR,-10.1,14.02,Volt,Clock rail high voltage DAC register for channel 1
+SL3_A_V2_LowDac,SL3_A_V2_LowDac,0x0040103,1,0x0E000000,SIMPLE,SIMPLE,FLOAT,UINT,10.503,127.868,LINEAR,-10.07,14.1,Volt,Clock rail low voltage DAC register for channel 1
+SL3_A_V2_Tel,SL3_A_V2_Tel,0x0040292,1,0x0E000000,NOMETHOD,WRT2READ,FLOAT,TWLVBIT,102.4,0,LINEAR,-15,15,Volt,Reads the voltage telemetry data for clock channel 1
+SL3_A_V3,SL3_A_V3,0x0040000,1,0x0E000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,4,0,LINEAR,0,1,Boolean,This function provides direct control of the clock signal CLKOUT[1]
+SL3_A_V3_HiDac,SL3_A_V3_HiDac,0x0040104,1,0x0E000000,SIMPLE,SIMPLE,FLOAT,UINT,10.571,127.606,LINEAR,-10.16,14.01,Volt,Clock rail high voltage DAC register for channel 1
+SL3_A_V3_LowDac,SL3_A_V3_LowDac,0x0040105,1,0x0E000000,SIMPLE,SIMPLE,FLOAT,UINT,10.566,127.658,LINEAR,-10.12,14.09,Volt,Clock rail low voltage DAC register for channel 1
+SL3_A_V3_Tel,SL3_A_V3_Tel,0x0040282,1,0x0E000000,NOMETHOD,WRT2READ,FLOAT,TWLVBIT,102.4,0,LINEAR,-15,15,Volt,Reads the voltage telemetry data for clock channel 1
+SL3_B_H1L,SL3_B_H1L,0x0040000,1,0x0F000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,262144,0,LINEAR,0,1,Boolean,This function provides direct control of the clock signal CLKOUT[1]
+SL3_B_H1L_HiDac,SL3_B_H1L_HiDac,0x0040128,1,0x0F000000,SIMPLE,SIMPLE,FLOAT,UINT,10.545,127.447,LINEAR,-10.13,14.02,Volt,Clock rail high voltage DAC register for channel 1
+SL3_B_H1L_LowDac,SL3_B_H1L_LowDac,0x0040129,1,0x0F000000,SIMPLE,SIMPLE,FLOAT,UINT,10.545,127.342,LINEAR,-10.07,14.1,Volt,Clock rail low voltage DAC register for channel 1
+SL3_B_H1L_Tel,SL3_B_H1L_Tel,0x004028D,1,0x0F000000,NOMETHOD,WRT2READ,FLOAT,TWLVBIT,102.4,0,LINEAR,-15,15,Volt,Reads the voltage telemetry data for clock channel 1
+SL3_B_H1U,SL3_B_H1U,0x0040000,1,0x0F000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,524288,0,LINEAR,0,1,Boolean,This function provides direct control of the clock signal CLKOUT[1]
+SL3_B_H1U_HiDac,SL3_B_H1U_HiDac,0x0040130,1,0x0F000000,SIMPLE,SIMPLE,FLOAT,UINT,10.561,127.606,LINEAR,-10.2,14.02,Volt,Clock rail high voltage DAC register for channel 1
+SL3_B_H1U_LowDac,SL3_B_H1U_LowDac,0x0040131,1,0x0F000000,SIMPLE,SIMPLE,FLOAT,UINT,10.561,127.5,LINEAR,-10.14,14.1,Volt,Clock rail low voltage DAC register for channel 1
+SL3_B_H1U_Tel,SL3_B_H1U_Tel,0x0040287,1,0x0F000000,NOMETHOD,WRT2READ,FLOAT,TWLVBIT,102.4,0,LINEAR,-15,15,Volt,Reads the voltage telemetry data for clock channel 1
+SL3_B_H2,SL3_B_H2,0x0040000,1,0x11000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,1073741824,0,LINEAR,0,1,Boolean,This function provides direct control of the clock signal CLKOUT[3]
+SL3_B_H2_HiDac,SL3_B_H2_HiDac,0x0040152,1,0x0F000000,SIMPLE,SIMPLE,FLOAT,UINT,10.592,127.5,LINEAR,-10.11,14.02,Volt,Clock rail high voltage DAC register for channel 1
+SL3_B_H2_LowDac,SL3_B_H2_LowDac,0x0040153,1,0x0F000000,SIMPLE,SIMPLE,FLOAT,UINT,10.566,127.658,LINEAR,-10.05,14.09,Volt,Clock rail low voltage DAC register for channel 1
+SL3_B_H2_Tel,SL3_B_H2_Tel,0x004028F,1,0x0F000000,NOMETHOD,WRT2READ,FLOAT,TWLVBIT,102.4,0,LINEAR,-15,15,Volt,Reads the voltage telemetry data for clock channel 1
+SL3_B_H3L,SL3_B_H3L,0x0040000,1,0x0F000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,1048576,0,LINEAR,0,1,Boolean,This function provides direct control of the clock signal CLKOUT[1]
+SL3_B_H3L_HiDac,SL3_B_H3L_HiDac,0x0040132,1,0x0F000000,SIMPLE,SIMPLE,FLOAT,UINT,10.576,127.659,LINEAR,-10.16,14.01,Volt,Clock rail high voltage DAC register for channel 1
+SL3_B_H3L_LowDac,SL3_B_H3L_LowDac,0x0040133,1,0x0F000000,SIMPLE,SIMPLE,FLOAT,UINT,10.555,127.664,LINEAR,-10.11,14.09,Volt,Clock rail low voltage DAC register for channel 1
+SL3_B_H3L_Tel,SL3_B_H3L_Tel,0x0040294,1,0x0F000000,NOMETHOD,WRT2READ,FLOAT,TWLVBIT,102.4,0,LINEAR,-15,15,Volt,Reads the voltage telemetry data for clock channel 1
+SL3_B_H3U,SL3_B_H3U,0x0040000,1,0x0F000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,2097152,0,LINEAR,0,1,Boolean,This function provides direct control of the clock signal CLKOUT[1]
+SL3_B_H3U_HiDac,SL3_B_H3U_HiDac,0x0040134,1,0x0F000000,SIMPLE,SIMPLE,FLOAT,UINT,10.566,127.658,LINEAR,-10.14,14.01,Volt,Clock rail high voltage DAC register for channel 1
+SL3_B_H3U_LowDac,SL3_B_H3U_LowDac,0x0040135,1,0x0F000000,SIMPLE,SIMPLE,FLOAT,UINT,10.566,127.658,LINEAR,-10.1,14.09,Volt,Clock rail low voltage DAC register for channel 1
+SL3_B_H3U_Tel,SL3_B_H3U_Tel,0x0040295,1,0x0F000000,NOMETHOD,WRT2READ,FLOAT,TWLVBIT,102.4,0,LINEAR,-15,15,Volt,Reads the voltage telemetry data for clock channel 1
+SL3_B_RG,SL3_B_RG,0x0040000,1,0x0F000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,4194304,0,LINEAR,0,1,Boolean,This function provides direct control of the clock signal CLKOUT[1]
+SL3_B_RG_HiDac,SL3_B_RG_HiDac,0x0040138,1,0x0F000000,SIMPLE,SIMPLE,FLOAT,UINT,10.529,127.711,LINEAR,-10.16,14,Volt,Clock rail high voltage DAC register for channel 1
+SL3_B_RG_LowDac,SL3_B_RG_LowDac,0x0040139,1,0x0F000000,SIMPLE,SIMPLE,FLOAT,UINT,10.539,127.605,LINEAR,-10.14,14.06,Volt,Clock rail low voltage DAC register for channel 1
+SL3_B_RG_Tel,SL3_B_RG_Tel,0x0040288,1,0x0F000000,NOMETHOD,WRT2READ,FLOAT,TWLVBIT,102.4,0,LINEAR,-15,15,Volt,Reads the voltage telemetry data for clock channel 1
+SL3_B_SW,SL3_B_SW,0x0040000,1,0x0F000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,8388608,0,LINEAR,0,1,Boolean,This function provides direct control of the clock signal CLKOUT[1]
+SL3_B_SW_HiDac,SL3_B_SW_HiDac,0x0040136,1,0x0F000000,SIMPLE,SIMPLE,FLOAT,UINT,10.582,127.5,LINEAR,-10.11,14.01,Volt,Clock rail high voltage DAC register for channel 1
+SL3_B_SW_LowDac,SL3_B_SW_LowDac,0x0040137,1,0x0F000000,SIMPLE,SIMPLE,FLOAT,UINT,10.592,127.5,LINEAR,-10.08,14.07,Volt,Clock rail low voltage DAC register for channel 1
+SL3_B_SW_Tel,SL3_B_SW_Tel,0x0040289,1,0x0F000000,NOMETHOD,WRT2READ,FLOAT,TWLVBIT,102.4,0,LINEAR,-15,15,Volt,Reads the voltage telemetry data for clock channel 1
+SL3_B_TG,SL3_B_TG,0x0040000,1,0x0F000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,128,0,LINEAR,0,1,Boolean,This function provides direct control of the clock signal CLKOUT[1]
+SL3_B_TG_HiDac,SL3_B_TG_HiDac,0x0040126,1,0x0F000000,SIMPLE,SIMPLE,FLOAT,UINT,10.555,127.553,LINEAR,-10.13,14.01,Volt,Clock rail high voltage DAC register for channel 1
+SL3_B_TG_LowDac,SL3_B_TG_LowDac,0x0040127,1,0x0F000000,SIMPLE,SIMPLE,FLOAT,UINT,10.529,127.605,LINEAR,-10.09,14.08,Volt,Clock rail low voltage DAC register for channel 1
+SL3_B_TG_Tel,SL3_B_TG_Tel,0x00402A0,1,0x0F000000,NOMETHOD,WRT2READ,FLOAT,TWLVBIT,102.4,0,LINEAR,-15,15,Volt,Reads the voltage telemetry data for clock channel 1
+SL3_B_V1,SL3_B_V1,0x0040000,1,0x0F000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,16,0,LINEAR,0,1,Boolean,This function provides direct control of the clock signal CLKOUT[1]
+SL3_B_V1_HiDac,SL3_B_V1_HiDac,0x0040120,1,0x0F000000,SIMPLE,SIMPLE,FLOAT,UINT,10.524,127.237,LINEAR,-10.14,14.01,Volt,Clock rail high voltage DAC register for channel 1
+SL3_B_V1_LowDac,SL3_B_V1_LowDac,0x0040121,1,0x0F000000,SIMPLE,SIMPLE,FLOAT,UINT,10.528,127.284,LINEAR,-10.09,14.09,Volt,Clock rail low voltage DAC register for channel 1
+SL3_B_V1_Tel,SL3_B_V1_Tel,0x004028E,1,0x0F000000,NOMETHOD,WRT2READ,FLOAT,TWLVBIT,102.4,0,LINEAR,-15,15,Volt,Reads the voltage telemetry data for clock channel 1
+SL3_B_V2,SL3_B_V2,0x0040000,1,0x0F000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,32,0,LINEAR,0,1,Boolean,This function provides direct control of the clock signal CLKOUT[1]
+SL3_B_V2_HiDac,SL3_B_V2_HiDac,0x0040122,1,0x0F000000,SIMPLE,SIMPLE,FLOAT,UINT,10.534,127.553,LINEAR,-10.15,14.02,Volt,Clock rail high voltage DAC register for channel 1
+SL3_B_V2_LowDac,SL3_B_V2_LowDac,0x0040123,1,0x0F000000,SIMPLE,SIMPLE,FLOAT,UINT,10.534,127.553,LINEAR,-10.09,14.1,Volt,Clock rail low voltage DAC register for channel 1
+SL3_B_V2_Tel,SL3_B_V2_Tel,0x0040281,1,0x0F000000,NOMETHOD,WRT2READ,FLOAT,TWLVBIT,102.4,0,LINEAR,-15,15,Volt,Reads the voltage telemetry data for clock channel 1
+SL3_B_V3,SL3_B_V3,0x0040000,1,0x0F000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,64,0,LINEAR,0,1,Boolean,This function provides direct control of the clock signal CLKOUT[1]
+SL3_B_V3_HiDac,SL3_B_V3_HiDac,0x0040124,1,0x0F000000,SIMPLE,SIMPLE,FLOAT,UINT,10.555,127.658,LINEAR,-10.18,14.03,Volt,Clock rail high voltage DAC register for channel 1
+SL3_B_V3_LowDac,SL3_B_V3_LowDac,0x0040125,1,0x0F000000,SIMPLE,SIMPLE,FLOAT,UINT,10.561,127.711,LINEAR,-10.12,14.1,Volt,Clock rail low voltage DAC register for channel 1
+SL3_B_V3_Tel,SL3_B_V3_Tel,0x0040291,1,0x0F000000,NOMETHOD,WRT2READ,FLOAT,TWLVBIT,102.4,0,LINEAR,-15,15,Volt,Reads the voltage telemetry data for clock channel 1
+SL3_C_H1L,SL3_C_H1L,0x0040000,1,0x10000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,16777216,0,LINEAR,0,1,Boolean,This function provides direct control of the clock signal CLKOUT[1]
+SL3_C_H1L_HiDac,SL3_C_H1L_HiDac,0x0040148,1,0x10000000,SIMPLE,SIMPLE,FLOAT,UINT,10.545,127.658,LINEAR,-10.17,13.96,Volt,Clock rail high voltage DAC register for channel 1
+SL3_C_H1L_LowDac,SL3_C_H1L_LowDac,0x0040149,1,0x10000000,SIMPLE,SIMPLE,FLOAT,UINT,10.539,127.605,LINEAR,-10.12,14.01,Volt,Clock rail low voltage DAC register for channel 1
+SL3_C_H1L_Tel,SL3_C_H1L_Tel,0x004029A,1,0x10000000,NOMETHOD,WRT2READ,FLOAT,TWLVBIT,102.4,0,LINEAR,-15,15,Volt,Reads the voltage telemetry data for clock channel 1
+SL3_C_H1U,SL3_C_H1U,0x0040000,1,0x10000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,33554432,0,LINEAR,0,1,Boolean,This function provides direct control of the clock signal CLKOUT[1]
+SL3_C_H1U_HiDac,SL3_C_H1U_HiDac,0x004014A,1,0x10000000,SIMPLE,SIMPLE,FLOAT,UINT,10.524,127.553,LINEAR,-10.19,13.97,Volt,Clock rail high voltage DAC register for channel 1
+SL3_C_H1U_LowDac,SL3_C_H1U_LowDac,0x004014B,1,0x10000000,SIMPLE,SIMPLE,FLOAT,UINT,10.513,127.658,LINEAR,-10.14,14.02,Volt,Clock rail low voltage DAC register for channel 1
+SL3_C_H1U_Tel,SL3_C_H1U_Tel,0x004029D,1,0x10000000,NOMETHOD,WRT2READ,FLOAT,TWLVBIT,102.4,0,LINEAR,-15,15,Volt,Reads the voltage telemetry data for clock channel 1
+SL3_C_H2,SL3_C_H2,0x0040000,1,0x12000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,1073741824,0,LINEAR,0,1,Boolean,This function provides direct control of the clock signal CLKOUT[1]
+SL3_C_H2_HiDac,SL3_C_H2_HiDac,0x0040154,1,0x10000000,SIMPLE,SIMPLE,FLOAT,UINT,10.566,127.236,LINEAR,-10.11,14.02,Volt,Clock rail high voltage DAC register for channel 1
+SL3_C_H2_LowDac,SL3_C_H2_LowDac,0x0040155,1,0x10000000,SIMPLE,SIMPLE,FLOAT,UINT,10.561,127.289,LINEAR,-10.05,14.09,Volt,Clock rail low voltage DAC register for channel 1
+SL3_C_H2_Tel,SL3_C_H2_Tel,0x004029E,1,0x10000000,NOMETHOD,WRT2READ,FLOAT,TWLVBIT,102.4,0,LINEAR,-15,15,Volt,Reads the voltage telemetry data for clock channel 1
+SL3_C_H3L,SL3_C_H3L,0x0040000,1,0x10000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,67108864,0,LINEAR,0,1,Boolean,This function provides direct control of the clock signal CLKOUT[1]
+SL3_C_H3L_HiDac,SL3_C_H3L_HiDac,0x0040150,1,0x10000000,SIMPLE,SIMPLE,FLOAT,UINT,10.55,127.5,LINEAR,-10.17,13.97,Volt,Clock rail high voltage DAC register for channel 1
+SL3_C_H3L_LowDac,SL3_C_H3L_LowDac,0x0040151,1,0x10000000,SIMPLE,SIMPLE,FLOAT,UINT,10.561,127.394,LINEAR,-10.12,14.02,Volt,Clock rail low voltage DAC register for channel 1
+SL3_C_H3L_Tel,SL3_C_H3L_Tel,0x00402A2,1,0x10000000,NOMETHOD,WRT2READ,FLOAT,TWLVBIT,102.4,0,LINEAR,-15,15,Volt,Reads the voltage telemetry data for clock channel 1
+SL3_C_H3U,SL3_C_H3U,0x0040000,1,0x10000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,134217728,0,LINEAR,0,1,Boolean,This function provides direct control of the clock signal CLKOUT[1]
+SL3_C_H3U_HiDac,SL3_C_H3U_HiDac,0x0040156,1,0x10000000,SIMPLE,SIMPLE,FLOAT,UINT,10.55,127.5,LINEAR,-10.23,14.19,Volt,Clock rail high voltage DAC register for channel 1
+SL3_C_H3U_LowDac,SL3_C_H3U_LowDac,0x0040157,1,0x10000000,SIMPLE,SIMPLE,FLOAT,UINT,10.576,127.447,LINEAR,-10.19,14.21,Volt,Clock rail low voltage DAC register for channel 1
+SL3_C_H3U_Tel,SL3_C_H3U_Tel,0x004029F,1,0x10000000,NOMETHOD,WRT2READ,FLOAT,TWLVBIT,102.4,0,LINEAR,-15,15,Volt,Reads the voltage telemetry data for clock channel 1
+SL3_C_RG,SL3_C_RG,0x0040000,1,0x10000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,268435456,0,LINEAR,0,1,Boolean,This function provides direct control of the clock signal CLKOUT[1]
+SL3_C_RG_HiDac,SL3_C_RG_HiDac,0x0040158,1,0x10000000,SIMPLE,SIMPLE,FLOAT,UINT,10.503,127.447,LINEAR,-10.25,14.13,Volt,Clock rail high voltage DAC register for channel 1
+SL3_C_RG_LowDac,SL3_C_RG_LowDac,0x0040159,1,0x10000000,SIMPLE,SIMPLE,FLOAT,UINT,10.529,127.395,LINEAR,-10.22,14.14,Volt,Clock rail low voltage DAC register for channel 1
+SL3_C_RG_Tel,SL3_C_RG_Tel,0x0040298,1,0x10000000,NOMETHOD,WRT2READ,FLOAT,TWLVBIT,102.4,0,LINEAR,-15,15,Volt,Reads the voltage telemetry data for clock channel 1
+SL3_C_SW,SL3_C_SW,0x0040000,1,0x10000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,536870912,0,LINEAR,0,1,Boolean,This function provides direct control of the clock signal CLKOUT[1]
+SL3_C_SW_HiDac,SL3_C_SW_HiDac,0x004015A,1,0x10000000,SIMPLE,SIMPLE,FLOAT,UINT,10.518,127.395,LINEAR,-10.24,14.15,Volt,Clock rail high voltage DAC register for channel 1
+SL3_C_SW_LowDac,SL3_C_SW_LowDac,0x004015B,1,0x10000000,SIMPLE,SIMPLE,FLOAT,UINT,10.529,127.289,LINEAR,-10.23,14.13,Volt,Clock rail low voltage DAC register for channel 1
+SL3_C_SW_Tel,SL3_C_SW_Tel,0x004029C,1,0x10000000,NOMETHOD,WRT2READ,FLOAT,TWLVBIT,102.4,0,LINEAR,-15,15,Volt,Reads the voltage telemetry data for clock channel 1
+SL3_C_TG,SL3_C_TG,0x0040000,1,0x10000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,2048,0,LINEAR,0,1,Boolean,This function provides direct control of the clock signal CLKOUT[1]
+SL3_C_TG_HiDac,SL3_C_TG_HiDac,0x0040146,1,0x10000000,SIMPLE,SIMPLE,FLOAT,UINT,10.539,127.5,LINEAR,-10.18,13.97,Volt,Clock rail high voltage DAC register for channel 1
+SL3_C_TG_LowDac,SL3_C_TG_LowDac,0x0040147,1,0x10000000,SIMPLE,SIMPLE,FLOAT,UINT,10.545,127.447,LINEAR,-10.11,14.04,Volt,Clock rail low voltage DAC register for channel 1
+SL3_C_TG_Tel,SL3_C_TG_Tel,0x00402A1,1,0x10000000,NOMETHOD,WRT2READ,FLOAT,TWLVBIT,102.4,0,LINEAR,-15,15,Volt,Reads the voltage telemetry data for clock channel 1
+SL3_C_V1,SL3_C_V1,0x0040000,1,0x10000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,256,0,LINEAR,0,1,Boolean,This function provides direct control of the clock signal CLKOUT[1]
+SL3_C_V1_HiDac,SL3_C_V1_HiDac,0x0040140,1,0x10000000,SIMPLE,SIMPLE,FLOAT,UINT,10.524,127.237,LINEAR,-10.19,14,Volt,Clock rail high voltage DAC register for channel 1
+SL3_C_V1_LowDac,SL3_C_V1_LowDac,0x0040141,1,0x10000000,SIMPLE,SIMPLE,FLOAT,UINT,10.534,127.237,LINEAR,-10.09,14.06,Volt,Clock rail low voltage DAC register for channel 1
+SL3_C_V1_Tel,SL3_C_V1_Tel,0x004029B,1,0x10000000,NOMETHOD,WRT2READ,FLOAT,TWLVBIT,102.4,0,LINEAR,-15,15,Volt,Reads the voltage telemetry data for clock channel 1
+SL3_C_V2,SL3_C_V2,0x0040000,1,0x10000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,512,0,LINEAR,0,1,Boolean,This function provides direct control of the clock signal CLKOUT[1]
+SL3_C_V2_HiDac,SL3_C_V2_HiDac,0x0040142,1,0x10000000,SIMPLE,SIMPLE,FLOAT,UINT,10.571,127.5,LINEAR,-10.17,13.97,Volt,Clock rail high voltage DAC register for channel 1
+SL3_C_V2_LowDac,SL3_C_V2_LowDac,0x0040143,1,0x10000000,SIMPLE,SIMPLE,FLOAT,UINT,10.566,127.553,LINEAR,-10.08,14.03,Volt,Clock rail low voltage DAC register for channel 1
+SL3_C_V2_Tel,SL3_C_V2_Tel,0x0040297,1,0x10000000,NOMETHOD,WRT2READ,FLOAT,TWLVBIT,102.4,0,LINEAR,-15,15,Volt,Reads the voltage telemetry data for clock channel 1
+SL3_C_V3,SL3_C_V3,0x0040000,1,0x10000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,1024,0,LINEAR,0,1,Boolean,This function provides direct control of the clock signal CLKOUT[1]
+SL3_C_V3_HiDac,SL3_C_V3_HiDac,0x0040144,1,0x10000000,SIMPLE,SIMPLE,FLOAT,UINT,10.529,127.395,LINEAR,-10.14,14,Volt,Clock rail high voltage DAC register for channel 1
+SL3_C_V3_LowDac,SL3_C_V3_LowDac,0x0040145,1,0x10000000,SIMPLE,SIMPLE,FLOAT,UINT,10.517,127.405,LINEAR,-10.06,14.06,Volt,Clock rail low voltage DAC register for channel 1
+SL3_C_V3_Tel,SL3_C_V3_Tel,0x00402A3,1,0x10000000,NOMETHOD,WRT2READ,FLOAT,TWLVBIT,102.4,0,LINEAR,-15,15,Volt,Reads the voltage telemetry data for clock channel 1
+##,,,,,,,,,,,,,,,
+SL3_CLKSEQ_PAT_MEM,SL3_CLKSEQ_PAT_MEM,0x0041000,64,0x00000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,65535,Value,Load clocks and delays in the microsequencer memory
+SL3_clkClkPort,SL3_CLK_CLKPORT,0x0040000,1,0x11000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,68719476736,Boolean,This function provides direct control of the clock signal port
+SL3_clkClockEnbl,SL3_CLK_CLOCK_ENBL,0x00401FE,1,0x11000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,8,0,LINEAR,0,1,Boolean,This function connects or isolates clock signals for channels 0 => 31 to the backplane connector
+SL3_CLK_CTLREG,SL3_CLK_CTLREG,0x004FFFC,1,0x11000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,1,0,LINEAR,0,65535,Boolean,Read / write the global control register for the board
+SL3_CLK_FIRMVERS,SL3_CLK_FIRMVERS,0x004FFFF,1,0x11000000,NOMETHOD,SIMPLE,FLOAT,UINT,100,0,LINEAR,0,655.35,Value,Read the board firmware version register
+SL3_clkOutputEnblReg,SL3_CLK_GLOBAL_ENBL,0x00401FE,1,0x11000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,65535,Boolean,This function enables or isolates all clock and bias signals to the backplane connector
+SL3_CLK_IDENT,SL3_CLK_IDENT,0x004FFFE,1,0x00000000,NOMETHOD,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,65535,Value,Read the board identity register
+SL3_CLK_LED_1,SL3_CLK_LED_1,0x004FFF9,1,0x00000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,1,0,LINEAR,0,1,Boolean,This function provides control of the status indicator led source 1 - Assigned to Board Select Signal
+SL3_CLK_LED_2,SL3_CLK_LED_2,0x004FFF9,1,0x00000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,2,0,LINEAR,0,1,Boolean,This function provides control of the CLK status indicator led source 2 - Currently Unassigned
+SL3_CLK_LED_3,SL3_CLK_LED_3,0x004FFF9,1,0x00000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,4,0,LINEAR,0,1,Boolean,This function provides control of the CLK status indicator led source 3 - Currently Unassigned
+SL3_clkMuxSlct,SL3_CLK_MUXSLCT,0x00401FF,1,0x11000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,65535,Boolean,This function selects which clock signals to be connected to the front panel test ports
+SL3_CLK_OUT_31,SL3_CLK_OUT_31,0x0040000,1,0x00000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,2147483648,0,LINEAR,0,1,Boolean,This function provides direct control of the clock signal CLKOUT[31]
+SL3_CLK_P1_SLCT,SL3_CLK_P1_SLCT,0x00401FF,1,0x11000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,1,0,LINEAR,0,33,Boolean,This function selects which clock signals to be connected to the front panel test port P2
+SL3_CLK_P2_SLCT,SL3_CLK_P2_SLCT,0x00401FF,1,0x11000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,64,0,LINEAR,0,33,Boolean,This function selects which clock signals to be connected to the front panel test port P1
+SL3_CLK_REBOOT,SL3_CLK_REBOOT,0x004FFFF,1,0x00000000,SIMPLE,NOMETHOD,FLOAT,UINT,1,0,LINEAR,0,65535,Boolean,Reboot the board firmware
+SL3_resetClk,SL3_CLK_RESET,0x004FFFE,1,0x11000000,SIMPLE,NOMETHOD,FLOAT,UINT,1,0,LINEAR,0,65535,Boolean,Soft reset the board firmware
+SL3_CLK_SERNUM,SL3_CLK_SERNUM,0x004FFFA,1,0x00000000,NOMETHOD,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,65535,Value,Read the silicon serial number of the board
+SL3_CLK_STATUS,SL3_CLK_STATUS,0x004FFFD,1,0x00000000,NOMETHOD,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,65535,Boolean,Read the status register for the board
+SL3_CLK_TEL+15VA,SL3_CLK_TEL+15VA,0x0040274,1,0x12000000,SIMPLE,WRT2READ,FLOAT,TWLVBIT,101.7,0,LINEAR,-20,20,Volt,Reads the telemetry data for P15 voltage supply
+SL3_CLK_TEL+5,SL3_CLK_TEL+5,0x0040276,1,0x12000000,SIMPLE,WRT2READ,FLOAT,TWLVBIT,101.7,0,LINEAR,-20,20,Volt,Reads the telemetry data for +5VA voltage supply
+SL3_CLK_TEL+VAC,SL3_CLK_TEL+VAC,0x0040272,1,0x12000000,SIMPLE,WRT2READ,FLOAT,TWLVBIT,101.7,0,LINEAR,-20,20,Volt,Reads the telemetry data for +VAC voltage supply
+SL3_CLK_TEL-15,SL3_CLK_TEL-15,0x0040275,1,0x12000000,SIMPLE,WRT2READ,FLOAT,TWLVBIT,101.7,0,LINEAR,-20,20,Volt,Reads the telemetry data for N15 voltage supply
+SL3_CLK_TEL-5,SL3_CLK_TEL-5,0x0040277,1,0x12000000,SIMPLE,WRT2READ,FLOAT,TWLVBIT,101.7,0,LINEAR,-20,20,Volt,Reads the telemetry data for -5VA voltage supply
+SL3_CLK_TEL-VAC,SL3_CLK_TEL-VAC,0x0040273,1,0x12000000,SIMPLE,WRT2READ,FLOAT,TWLVBIT,101.7,0,LINEAR,-20,20,Volt,Reads the telemetry data for -VAC voltage supply
+SL3_CLK_TELCLK0REF,SL3_CLK_TELCLK0REF,0x0040279,1,0x12000000,SIMPLE,WRT2READ,FLOAT,TWLVBIT,203.4,0,LINEAR,-15,15,Volt,Reads the telemetry data for CLKV0REF voltage
+SL3_CLK_TELCLK2REF,SL3_CLK_TELCLK2REF,0x004027A,1,0x12000000,SIMPLE,WRT2READ,FLOAT,TWLVBIT,203.4,0,LINEAR,-15,15,Volt,Reads the telemetry data for CLKV1REF voltage
+SL3_CLK_TELCLK4REF,SL3_CLK_TELCLK4REF,0x0040278,1,0x12000000,SIMPLE,WRT2READ,FLOAT,TWLVBIT,203.4,0,LINEAR,-15,15,Volt,Reads the telemetry data for CLKV2REF voltage
+SL3_clkClkTelMode,SL3_CLK_TELCLKMODE,0x0040170,36,0x00000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,255,Value,Sets the telemetry data mode (ADC Mode) for clock channels 0 through 31 to read clock voltage
+SL3_CLK_TELCLKREF,SL3_CLK_TELCLKREF,0x004027C,1,0x12000000,NOMETHOD,WRT2READ,FLOAT,TWLVBIT,203.4,0,LINEAR,-15,15,Volt,Reads the telemetry data for CLKDACREF voltage
+SL3_clkRefTelMode,SL3_CLK_TELREFMODE,0x00401F0,8,0x13000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,255,Value,Sets the telemetry data mode (ADC Mode) for reading reference voltages
+SL3_clkSupplyTelMode,SL3_CLK_TELSUPPLYMODE,0x00401E8,8,0x13000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,255,Value,Sets the telemetry data mode (ADC Mode) for reading supply voltages
+SL3_CLK_TEMP,SL3_CLK_TEMP,0x004FFFB,1,0x00000000,NOMETHOD,WRT2READ,FLOAT,TWLVBIT,10,0,LINEAR,-128,128,Deg.C,Read the actual temperature of the board
+SL3_START_MICRO,SL3_START_MICRO,0x0040020,1,0x00000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,1,0,LINEAR,0,65535,Value,Start microsequencer
+##,,,,,,,,,,,,,,,
+## Cardtype - CCD12,,,,,,,,,,,,,,,
+CtcTrig,CtcTrigFunction,0x0380000,1,0x01000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,2048,Boolean,This function reads and writes data to the ADC Mode registers.
+CtcTrig2cards,CtcTrig2cardsFunction,0x0300000,1,0x01000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,2048,Boolean,This function reads and writes data to the ADC Mode registers.
+##,,,,,,,,,,,,,,,
+## Cardtype - CCD12,,,,,,,,,,,,,,,
+SL5_CCD_AdcCfg,SL5_CCD_ADCCFG,0x0100200,12,0x18000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,2048,Boolean,This function reads and writes data to the ADC Mode registers.
+SL5_CCD_ADCDATA,SL5_CCD_ADCDATA,0x0100100,12,0x00000000,NOMETHOD,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,2048,Boolean,This function reads and writes data to the ADC Mode registers.
+SL5_CCD_AUXCFGREG,SL5_CCD_AUXCFGREG,0x0100280,1,0x18000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,2048,Boolean,Auxiliary configuration register
+SL5_CCD_BIAS_CLR,SL5_CCD_BIAS_CLR,0x0100280,1,0x00000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,16,0,LINEAR,0,1,Boolean,dac clear
+SL5_CCD_BIAS_CLSEL02,SL5_CCD_BIAS_CLSEL02,0x0100280,1,0x00000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,64,0,LINEAR,0,1,Boolean,dac clear select banks 0 and 2
+SL5_CCD_BIAS_CLSEL13,SL5_CCD_BIAS_CLSEL13,0x0100280,1,0x00000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,128,0,LINEAR,0,1,Boolean,dac clear select banks 1 and 3
+SL5_CCD_BIAS_CLSEL45,SL5_CCD_BIAS_CLSEL45,0x0100280,1,0x00000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,512,0,LINEAR,0,1,Boolean,dac clear select banks 4 and 5
+SL5_CCD_BURST,SL5_CCD_BURST,0x0100004,1,0x00000000,SIMPLE,NOMETHOD,FLOAT,UINT,1,0,LINEAR,0,1,Boolean,Writing to this initiates a write to PAN of all active and selected ADC data channels.
+SL5_CCD_DATASEL,SLOT5_CCD_DATASEL,0x010FFFC,1,0x13000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,16,0,LINEAR,0,3,Value,Set pixel data width
+SL5_CCD_BURSTENABLE,SL5_CCD_BURSTENABLE,0x010FFFC,1,0x18000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,4,0,LINEAR,0,1,Boolean,Enables the burst write function to run. This transfers data from the board to the PAN after a write to function IRACQ_BURST
+SL5_CCD_CDSENABLE,SL5_CCD_CDSENABLE,0x0100280,1,0x18000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,1,0,LINEAR,0,1,Boolean,Enables the output to the CDS analog circuitry
+SL5_CCD_CDSREG,SL5_CCD_CDSREG,0x0100000,1,0x00000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,65535,Boolean,Writing to this function controls the CDS state of the addressed video channel
+SL5_CCD_AUDIT_CTC,SL5_CCD_CTC_COUNT,0x010C000,1,0x18000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,2048,Boolean,Audit register
+SL5_CCD_CTLREG,SL5_CCD_CTLREG,0x010FFFC,1,0x18000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,65535,Boolean,Read / write the global control register for the board
+SL5_CCD_DOPREG,SL5_CCD_DOPREG,0x0100001,1,0x00000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,4294967295,Value,Writing to this sets the data at the digital output port (DOP)
+SL5_CCD_EVENT_REG,SL5_CCD_EVENT_REG,0x010FFF0,1,0x00000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,1,Value,CCD12 only - Global event register used to receive event strobes
+SL5_CCD_FIRMVERS,SL5_CCD_FIRMVERS,0x010FFFF,1,0x18000000,NOMETHOD,SIMPLE,FLOAT,UINT,100,0,LINEAR,0,655.35,Value,Read the board firmware version register
+#SL5_CCD_HVBIAS_EN,SL5_CCD_HVBIAS_EN,0x0100280,1,0x18000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,2,0,LINEAR,0,1,Boolean,Enables all high voltage bias supply outputs
+SL5_CCD_HVBIAS_EN,SL5_CCD_HVBIAS_EN,0x0100280,1,0x18000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,2,0,LINEAR,0,1,Boolean,Enables VDD VOG VR high voltage bias supply outputs
+SL5_CCD_HV_BIAS_EN0,SL5_CCD_HVBIAS_EN0,0x0100280,1,0x18000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,4,0,LINEAR,0,1,Boolean,Enables VSUB high voltage bias supply outputs
+SL5_CCD_IDENTREG,SL5_CCD_IDENTREG,0x010FFFE,1,0x00000000,NOMETHOD,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,65535,Value,Read the board identity register
+SL5_CCD_LEDCTL,SL5_CCD_LEDCTL,0x010FFF9,1,0x00000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,2048,Boolean,LED control register
+SL5_CCD_LED_1,SL5_CCD_LED_1,0x010FFF9,1,0x00000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,1,0,LINEAR,0,1,Boolean,This function provides control of the Board status indicator led source 1 - Assigned to Board Select signal
+SL5_CCD_LED_2,SL5_CCD_LED_2,0x010FFF9,1,0x00000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,2,0,LINEAR,0,1,Boolean,This function provides control of the Board status indicator led source 2 - Assigned to the CDS data Load strobe
+SL5_CCD_LED_3,SL5_CCD_LED_3,0x010FFF9,1,0x00000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,4,0,LINEAR,0,1,Boolean,This function provides control of the Board status indicator led source 3 - Assigned to ADC Data Xfer strobe
+SL5_CCD_NVCTL,SL5_CCD_NVCTL,0x0102100,1,0x00000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,2048,Boolean,Non-volatile EEPROM control register
+SL5_CCD_NVDAT,SL5_CCD_NVDAT,0x0102000,16,0x00000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,2048,Boolean,Non-volatile RAM buffer
+SL5_CCD_OFFS_CLR,SL5_CCD_OFFS_CLR,0x0100280,1,0x00000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,32,0,LINEAR,0,1,Boolean,enables the bias voltages
+SL5_CCD_OFFS_CLSEL,SL5_CCD_OFFS_CLSEL,0x0100280,1,0x00000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,256,0,LINEAR,0,1,Boolean,enables the bias voltages
+SL5_CCD_PAT_MEM,SL5_CCD_PAT_MEM,0x0101000,16,0x00000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,65535,Value,Micro sequencer pattern memory space 64 locations
+SL5_CCD_PIPENABLE,SL5_CCD_PIPENABLE,0x010FFFC,1,0x18000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,2,0,LINEAR,0,1,Boolean,Enables the pipeline write function to run. Automatically transfers data from the board to the PAN after a conversion cycle
+SL5_CCD_PIPEPRIORITY,SL5_CCD_PIPEPRIORITY,0x010FFFC,1,0x18000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,256,0,LINEAR,0,7,Value,Pipeline write priority so that multiple boards can send their data sequentially to the pan.
+SL5_CCD_REBOOT,SL5_CCD_REBOOT,0x010FFFF,1,0x00000000,SIMPLE,NOMETHOD,FLOAT,UINT,1,0,LINEAR,0,1,Boolean,Reboot the board firmware
+SL5_CCD_Redirect,SL5_CCD_REDIRECT,0x0100300,12,0x18000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,12,Value,Assign a channel number to these registers
+SL5_CCD_AUDIT_REQ,SL5_CCD_REQ_COUNT,0x010C001,1,0x18000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,2048,Boolean,Audit register
+SL5_CCD_RESET,SL5_CCD_RESET,0x010FFFE,1,0x00000000,SIMPLE,NOMETHOD,FLOAT,UINT,1,0,LINEAR,0,1,Boolean,Soft reset the board firmware
+SL5_CCD_RESET_DCM,SL5_CCD_RESET_DCM,0x010FFFC,1,0x00000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,1,0,LINEAR,0,1,Boolean,Enables the pipeline write function to run. Automatically transfers data from the board to the PAN after a conversion cycle
+SL5_CCD_SEQTRIG,SL5_CCD_SEQTRIG,0x0100005,1,0x00000000,SIMPLE,NOMETHOD,FLOAT,UINT,1,0,LINEAR,0,1,Boolean,Triggers the onboard micro-sequencer
+SL5_CCD_SERNUM,SL5_CCD_SERNUM,0x010FFFA,1,0x00000000,NOMETHOD,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,4294967295,Value,Read the silicon serial number of the board
+SL5_CCD_STATUSREG,SL5_CCD_STATUSREG,0x010FFFD,1,0x00000000,NOMETHOD,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,65535,Boolean,Read the status register for the board
+SL5_CCD_TEL_VDD,SL5_CCD_TEL_VDD,0x0100468,8,0x1A000000,NOMETHOD,WRT2READ,FLOAT,TWLVBIT,91.65,287.67,LINEAR,-30,30,Volt,This function reads the telemetry for the high voltage BIAS DAC register 16.
+SL5_CCD_TEL_VOG,SL5_CCD_TEL_VOG,0x0100460,8,0x1A000000,NOMETHOD,WRT2READ,FLOAT,TWLVBIT,204.72,-2.11,LINEAR,-30,30,Volt,This function reads the telemetry for the high voltage BIAS DAC register 0.
+SL5_CCD_TEL_VR_L,SL5_CCD_TEL_VR_L,0x0100458,8,0x19000000,NOMETHOD,WRT2READ,FLOAT,TWLVBIT,144.61,152.6,LINEAR,-30,30,Volt,This function reads the telemetry for the high voltage BIAS DAC register 18.
+SL5_CCD_TEL_VR_U,SL5_CCD_TEL_VR_U,0x0100450,8,0x19000000,NOMETHOD,WRT2READ,FLOAT,TWLVBIT,144.63,152.39,LINEAR,-30,30,Volt,This function reads the telemetry for the high voltage BIAS DAC register 18.
+SL5_CCD_TEL_VSUB_LIMIT,SL5_CCD_TEL_VSUB_LIMIT,0x0100440,1,0x18000000,NOMETHOD,WRT2READ,FLOAT,TWLVBIT,36.25,149,LINEAR,-30,30,Volt,This function reads the telemetry for the high voltage BIAS DAC register 16.
+SL5_CCD_TEL_VSUB_SLEW,SL5_CCD_TEL_VSUB_SLEW,0x0100441,1,0x18000000,NOMETHOD,WRT2READ,FLOAT,TWLVBIT,36.25,149,LINEAR,-30,30,Volt,This function reads the telemetry for the high voltage BIAS DAC register 17.
+SL5_CCD_TEMP,SL5_CCD_TEMP,0x010FFFB,1,0x00000000,NOMETHOD,WRT2READ,FLOAT,TWLVBIT,10,0,LINEAR,-128,128,Deg.C,Read the actual temperature of the board
+SL5_CCD_TESTPOINT,SL5_CCD_TESTPOINT,0x010FFFC,1,0x00000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,4096,0,LINEAR,0,15,Value,Pipeline write priority so that multiple boards can send their data sequentially to the pan.
+SL5_CCD_VDD,SL5_CCD_VDD,0x0100248,8,0x1A000000,SIMPLE,SIMPLE,FLOAT,UINT,162.82,4095.03,LINEAR,-22.5,0,Volt,This function reads and writes data to the high voltage DAC registers.
+SL5_CCD_VDD_TELMODE,SL5_CCD_VDD_TELMODE,0x0100278,8,0x1B000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,255,Volt,This function sets the telemetry mode for the high voltage BIAS DAC register 16.
+SL5_CCD_AdcOffsets,SL5_CCD_VOFFSETS,0x0100210,12,0x18000000,SIMPLE,SIMPLE,FLOAT,UINT,409.5,2047.5,LINEAR,-5,5,Volt,seq12 board offset voltage DACs
+SL5_CCD_VOG,SL5_CCD_VOG,0x0100240,8,0x1A000000,SIMPLE,SIMPLE,FLOAT,UINT,819,0.5,LINEAR,0,10,Volt,keep this DAC away from the 5V upper rail because it goes nonlinear here.
+SL5_CCD_VOG_TELMODE,SL5_CCD_VOG_TELMODE,0x0100270,8,0x1B000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,255,Volt,This function sets the telemetry mode for the high voltage BIAS DAC register 0.
+SL5_CCD_VR_L,SL5_CCD_VR_L,0x0100238,8,0x19000000,SIMPLE,SIMPLE,FLOAT,UINT,271.87,4095.07,LINEAR,-20,0,Volt,This function reads and writes data to the high voltage DAC registers.
+SL5_CCD_VR_L_TELMODE,SL5_CCD_VR_L_TELMODE,0x0100268,8,0x1B000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,255,Volt,This function sets the telemetry mode for the high voltage BIAS DAC register 19.
+SL5_CCD_VR_U,SL5_CCD_VR_U,0x0100230,8,0x19000000,SIMPLE,SIMPLE,FLOAT,UINT,271.87,4095.07,LINEAR,-20,0,Volt,This function reads and writes data to the high voltage DAC registers.
+SL5_CCD_VR_U_TELMODE,SL5_CCD_VR_U_TELMODE,0x0100260,8,0x1B000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,255,Volt,This function sets the telemetry mode for the high voltage BIAS DAC register 18.
+SL5_CCD12_VSUB_ENBL,SL5_CCD_VSUB_ENBL,0x010FFF8,1,0x18000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,1,Boolean,CCD12 only - Turns Vsub Voltage on if any bit is set
+SL5_CCD12_VSUB_LIMIT,SL5_CCD_VSUB_LIMIT,0x0100220,1,0x18000000,SIMPLE,SIMPLE,FLOAT,UINT,102,0,LINEAR,0,48,Volt,vsub upper voltage limit
+SL5_CCD_VSUB_LIMIT_TELMODE,SL5_CCD_VSUB_LIMIT_TELMODE,0x0100250,1,0x1B000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,255,Volt,This function sets the telemetry mode for the high voltage BIAS DAC register 16.
+SL5_CCD12_VSUB_SLEW,SL5_CCD_VSUB_SLEW,0x0100221,1,0x18000000,SIMPLE,SIMPLE,FLOAT,UINT,102,0,LINEAR,0,48,Volt/Sec,vsub slew or ramp rate is measured in volts per second
+SL5_CCD_VSUB_SLEW_TELMODE,SL5_CCD_VSUB_SLEW_TELMODE,0x0100251,1,0x1B000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,255,Volt,This function sets the telemetry mode for the high voltage BIAS DAC register 17.
+SL5_CCD_XfrCount,SL5_CCD_XFRCOUNT,0x0100340,1,0x18000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,15,Value,Define the number of pixels sent to the pan via redirection during pipeline writes. Must be an even number of channels
+SL5_CCD_AUDIT_XFR,SL5_CCD_XFR_COUNT,0x010C002,1,0x18000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,2048,Boolean,Audit register
+##,,,,,,,,,,,,,,,
+## Cardtype - CCD12,,,,,,,,,,,,,,,
+## Cardtype - CCD12,,,,,,,,,,,,,,,
+SL6_CCD_AdcCfg,SL6_CCD_ADCCFG,0x0200200,12,0x1C000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,2048,Boolean,This function reads and writes data to the ADC Mode registers.
+SL6_CCD_ADCDATA,SL6_CCD_ADCDATA,0x0200100,12,0x00000000,NOMETHOD,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,2048,Boolean,This function reads and writes data to the ADC Mode registers.
+SL6_CCD_AUXCFGREG,SL6_CCD_AUXCFGREG,0x0200280,1,0x1C000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,2048,Boolean,Auxiliary configuration register
+SL6_CCD_BIAS_CLR,SL6_CCD_BIAS_CLR,0x0200280,1,0x00000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,16,0,LINEAR,0,1,Boolean,dac clear
+SL6_CCD_BIAS_CLSEL02,SL6_CCD_BIAS_CLSEL02,0x0200280,1,0x00000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,64,0,LINEAR,0,1,Boolean,dac clear select banks 0 and 2
+SL6_CCD_BIAS_CLSEL13,SL6_CCD_BIAS_CLSEL13,0x0200280,1,0x00000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,128,0,LINEAR,0,1,Boolean,dac clear select banks 1 and 3
+SL6_CCD_BIAS_CLSEL45,SL6_CCD_BIAS_CLSEL45,0x0200280,1,0x00000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,512,0,LINEAR,0,1,Boolean,dac clear select banks 4 and 5
+SL6_CCD_BURST,SL6_CCD_BURST,0x0200004,1,0x00000000,SIMPLE,NOMETHOD,FLOAT,UINT,1,0,LINEAR,0,1,Boolean,Writing to this initiates a write to PAN of all active and selected ADC data channels.
+SL6_CCD_DATASEL,SLOT6_CCD_DATASEL,0x020FFFC,1,0x13000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,16,0,LINEAR,0,3,Value,Set pixel data width
+SL6_CCD_BURSTENABLE,SL6_CCD_BURSTENABLE,0x020FFFC,1,0x1C000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,4,0,LINEAR,0,1,Boolean,Enables the burst write function to run. This transfers data from the board to the PAN after a write to function IRACQ_BURST
+SL6_CCD_CDSENABLE,SL6_CCD_CDSENABLE,0x0200280,1,0x1C000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,1,0,LINEAR,0,1,Boolean,Enables the output to the CDS analog circuitry
+SL6_CCD_CDSREG,SL6_CCD_CDSREG,0x0200000,1,0x00000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,65535,Boolean,Writing to this function controls the CDS state of the addressed video channel
+SL6_CCD_AUDIT_CTC,SL6_CCD_CTC_COUNT,0x020C000,1,0x1C000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,2048,Boolean,Audit register
+SL6_CCD_CTLREG,SL6_CCD_CTLREG,0x020FFFC,1,0x1C000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,65535,Boolean,Read / write the global control register for the board
+SL6_CCD_DOPREG,SL6_CCD_DOPREG,0x0200001,1,0x00000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,4294967295,Value,Writing to this sets the data at the digital output port (DOP)
+SL6_CCD_EVENT_REG,SL6_CCD_EVENT_REG,0x020FFF0,1,0x00000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,1,Value,CCD12 only - Global event register used to receive event strobes
+SL6_CCD_FIRMVERS,SL6_CCD_FIRMVERS,0x020FFFF,1,0x1C000000,NOMETHOD,SIMPLE,FLOAT,UINT,100,0,LINEAR,0,655.35,Value,Read the board firmware version register
+#SL6_CCD_HVBIAS_EN,SL6_CCD_HVBIAS_EN,0x0200280,1,0x1C000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,2,0,LINEAR,0,1,Boolean,Enables all high voltage bias supply outputs
+SL6_CCD_HVBIAS_EN,SL6_CCD_HVBIAS_EN,0x0200280,1,0x1c000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,2,0,LINEAR,0,1,Boolean,Enables VDD VOG VR high voltage bias supply outputs
+SL6_CCD_HV_BIAS_EN0,SL6_CCD_HVBIAS_EN0,0x0200280,1,0x1c000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,4,0,LINEAR,0,1,Boolean,Enables VSUB high voltage bias supply outputs
+SL6_CCD_IDENTREG,SL6_CCD_IDENTREG,0x020FFFE,1,0x00000000,NOMETHOD,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,65535,Value,Read the board identity register
+SL6_CCD_LEDCTL,SL6_CCD_LEDCTL,0x020FFF9,1,0x00000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,2048,Boolean,LED control register
+SL6_CCD_LED_1,SL6_CCD_LED_1,0x020FFF9,1,0x00000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,1,0,LINEAR,0,1,Boolean,This function provides control of the Board status indicator led source 1 - Assigned to Board Select signal
+SL6_CCD_LED_2,SL6_CCD_LED_2,0x020FFF9,1,0x00000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,2,0,LINEAR,0,1,Boolean,This function provides control of the Board status indicator led source 2 - Assigned to the CDS data Load strobe
+SL6_CCD_LED_3,SL6_CCD_LED_3,0x020FFF9,1,0x00000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,4,0,LINEAR,0,1,Boolean,This function provides control of the Board status indicator led source 3 - Assigned to ADC Data Xfer strobe
+SL6_CCD_NVCTL,SL6_CCD_NVCTL,0x0202100,1,0x00000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,2048,Boolean,Non-volatile EEPROM control register
+SL6_CCD_NVDAT,SL6_CCD_NVDAT,0x0202000,16,0x00000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,2048,Boolean,Non-volatile RAM buffer
+SL6_CCD_OFFS_CLR,SL6_CCD_OFFS_CLR,0x0200280,1,0x00000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,32,0,LINEAR,0,1,Boolean,enables the bias voltages
+SL6_CCD_OFFS_CLSEL,SL6_CCD_OFFS_CLSEL,0x0200280,1,0x00000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,256,0,LINEAR,0,1,Boolean,enables the bias voltages
+SL6_CCD_PAT_MEM,SL6_CCD_PAT_MEM,0x0201000,16,0x00000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,65535,Value,Micro sequencer pattern memory space 64 locations
+SL6_CCD_PIPENABLE,SL6_CCD_PIPENABLE,0x020FFFC,1,0x1C000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,2,0,LINEAR,0,1,Boolean,Enables the pipeline write function to run. Automatically transfers data from the board to the PAN after a conversion cycle
+SL6_CCD_PIPEPRIORITY,SL6_CCD_PIPEPRIORITY,0x020FFFC,1,0x1C000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,256,0,LINEAR,0,7,Value,Pipeline write priority so that multiple boards can send their data sequentially to the pan.
+SL6_CCD_REBOOT,SL6_CCD_REBOOT,0x020FFFF,1,0x00000000,SIMPLE,NOMETHOD,FLOAT,UINT,1,0,LINEAR,0,1,Boolean,Reboot the board firmware
+SL6_CCD_Redirect,SL6_CCD_REDIRECT,0x0200300,12,0x1C000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,12,Value,Assign a channel number to these registers
+SL6_CCD_AUDIT_REQ,SL6_CCD_REQ_COUNT,0x020C001,1,0x1C000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,2048,Boolean,Audit register
+SL6_CCD_RESET,SL6_CCD_RESET,0x020FFFE,1,0x00000000,SIMPLE,NOMETHOD,FLOAT,UINT,1,0,LINEAR,0,1,Boolean,Soft reset the board firmware
+SL6_CCD_RESET_DCM,SL6_CCD_RESET_DCM,0x020FFFC,1,0x00000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,1,0,LINEAR,0,1,Boolean,Enables the pipeline write function to run. Automatically transfers data from the board to the PAN after a conversion cycle
+SL6_CCD_SEQTRIG,SL6_CCD_SEQTRIG,0x0200005,1,0x00000000,SIMPLE,NOMETHOD,FLOAT,UINT,1,0,LINEAR,0,1,Boolean,Triggers the onboard micro-sequencer
+SL6_CCD_SERNUM,SL6_CCD_SERNUM,0x020FFFA,1,0x00000000,NOMETHOD,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,4294967295,Value,Read the silicon serial number of the board
+SL6_CCD_STATUSREG,SL6_CCD_STATUSREG,0x020FFFD,1,0x00000000,NOMETHOD,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,65535,Boolean,Read the status register for the board
+SL6_CCD_TEL_VDD,SL6_CCD_TEL_VDD,0x0200468,8,0x1E000000,NOMETHOD,WRT2READ,FLOAT,TWLVBIT,91.65,287.67,LINEAR,-30,30,Volt,This function reads the telemetry for the high voltage BIAS DAC register 16.
+SL6_CCD_TEL_VOG,SL6_CCD_TEL_VOG,0x0200460,8,0x1E000000,NOMETHOD,WRT2READ,FLOAT,TWLVBIT,204.72,-2.11,LINEAR,-30,30,Volt,This function reads the telemetry for the high voltage BIAS DAC register 0.
+SL6_CCD_TEL_VR_L,SL6_CCD_TEL_VR_L,0x0200458,8,0x1D000000,NOMETHOD,WRT2READ,FLOAT,TWLVBIT,144.61,152.60,LINEAR,-30,30,Volt,This function reads the telemetry for the high voltage BIAS DAC register 18.
+SL6_CCD_TEL_VR_U,SL6_CCD_TEL_VR_U,0x0200450,8,0x1D000000,NOMETHOD,WRT2READ,FLOAT,TWLVBIT,144.63,152.39,LINEAR,-30,30,Volt,This function reads the telemetry for the high voltage BIAS DAC register 18.
+SL6_CCD_TEL_VSUB_LIMIT,SL6_CCD_TEL_VSUB_LIMIT,0x0200440,1,0x1C000000,NOMETHOD,WRT2READ,FLOAT,TWLVBIT,36.25,149,LINEAR,-30,30,Volt,This function reads the telemetry for the high voltage BIAS DAC register 16.
+SL6_CCD_TEL_VSUB_SLEW,SL6_CCD_TEL_VSUB_SLEW,0x0200441,1,0x1C000000,NOMETHOD,WRT2READ,FLOAT,TWLVBIT,36.25,149,LINEAR,-30,30,Volt,This function reads the telemetry for the high voltage BIAS DAC register 17.
+SL6_CCD_TEMP,SL6_CCD_TEMP,0x020FFFB,1,0x00000000,NOMETHOD,WRT2READ,FLOAT,TWLVBIT,10,0,LINEAR,-128,128,Deg.C,Read the actual temperature of the board
+SL6_CCD_TESTPOINT,SL6_CCD_TESTPOINT,0x020FFFC,1,0x00000000,RDMSKWRT,RDMSKWRT,FLOAT,UINT,4096,0,LINEAR,0,15,Value,Pipeline write priority so that multiple boards can send their data sequentially to the pan.
+SL6_CCD_VDD,SL6_CCD_VDD,0x0200248,8,0x1E000000,SIMPLE,SIMPLE,FLOAT,UINT,162.82,4095.03,LINEAR,-22.5,0,Volt,This function reads and writes data to the high voltage DAC registers.
+SL6_CCD_VDD_TELMODE,SL6_CCD_VDD_TELMODE,0x0200278,8,0x1F000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,255,Volt,This function sets the telemetry mode for the high voltage BIAS DAC register 16.
+SL6_CCD_AdcOffsets,SL6_CCD_VOFFSETS,0x0200210,12,0x1C000000,SIMPLE,SIMPLE,FLOAT,UINT,409.5,2047.5,LINEAR,-5,5,Volt,seq12 board offset voltage DACs
+SL6_CCD_VOG,SL6_CCD_VOG,0x0200240,8,0x1E000000,SIMPLE,SIMPLE,FLOAT,UINT,819.00,0.50,LINEAR,0,10,Volt,keep this DAC away from the 5V upper rail because it goes nonlinear here.
+SL6_CCD_VOG_TELMODE,SL6_CCD_VOG_TELMODE,0x0200270,8,0x1F000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,255,Volt,This function sets the telemetry mode for the high voltage BIAS DAC register 0.
+SL6_CCD_VR_L,SL6_CCD_VR_L,0x0200238,8,0x1D000000,SIMPLE,SIMPLE,FLOAT,UINT,271.87,4095.07,LINEAR,-20,0,Volt,This function reads and writes data to the high voltage DAC registers.
+SL6_CCD_VR_L_TELMODE,SL6_CCD_VR_L_TELMODE,0x0200268,8,0x1F000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,255,Volt,This function sets the telemetry mode for the high voltage BIAS DAC register 19.
+SL6_CCD_VR_U,SL6_CCD_VR_U,0x0200230,8,0x1D000000,SIMPLE,SIMPLE,FLOAT,UINT,271.87,4095.07,LINEAR,-20,0,Volt,This function reads and writes data to the high voltage DAC registers.
+SL6_CCD_VR_U_TELMODE,SL6_CCD_VR_U_TELMODE,0x0200260,8,0x1F000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,255,Volt,This function sets the telemetry mode for the high voltage BIAS DAC register 18.
+SL6_CCD12_VSUB_ENBL,SL6_CCD_VSUB_ENBL,0x020FFF8,1,0x1C000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,1,Boolean,CCD12 only - Turns Vsub Voltage on if any bit is set
+SL6_CCD12_VSUB_LIMIT,SL6_CCD_VSUB_LIMIT,0x0200220,1,0x1C000000,SIMPLE,SIMPLE,FLOAT,UINT,102.00,0,LINEAR,0,48,Volt,vsub upper voltage limit
+SL6_CCD_VSUB_LIMIT_TELMODE,SL6_CCD_VSUB_LIMIT_TELMODE,0x0200250,1,0x1F000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,255,Volt,This function sets the telemetry mode for the high voltage BIAS DAC register 16.
+SL6_CCD12_VSUB_SLEW,SL6_CCD_VSUB_SLEW,0x0200221,1,0x1C000000,SIMPLE,SIMPLE,FLOAT,UINT,102.00,0,LINEAR,0,48,Volt/Sec,vsub slew or ramp rate is measured in volts per second
+SL6_CCD_VSUB_SLEW_TELMODE,SL6_CCD_VSUB_SLEW_TELMODE,0x0200251,1,0x1F000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,255,Volt,This function sets the telemetry mode for the high voltage BIAS DAC register 17.
+SL6_CCD_XfrCount,SL6_CCD_XFRCOUNT,0x0200340,1,0x1C000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,15,Value,Define the number of pixels sent to the pan via redirection during pipeline writes. Must be an even number of channels
+SL6_CCD_AUDIT_XFR,SL6_CCD_XFR_COUNT,0x020C002,1,0x1C000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,2048,Boolean,Audit register
+##,,,,,,,,,,,,,,,
+##,,,,,,,,,,,,,,,
+CCD12_VSUB_ENABLE,CCD_VSUB_ENBL,0x018FFF8,1,0x14000000,SIMPLE,SIMPLE,FLOAT,UINT,1,0,LINEAR,0,1,Boolean,CCD12 only - Turns Vsub Voltage on if any bit is set
+CCD12_VSUB_LIMIT_DAC,CCD_VSUB_LIMIT,0x0180220,1,0x14000000,SIMPLE,SIMPLE,FLOAT,UINT,102,0,LINEAR,0,48,Volt,vsub upper voltage limit
+CCD12_VSUB_SLEW_DAC,CCD_VSUB_SLEW,0x0180221,1,0x14000000,SIMPLE,SIMPLE,FLOAT,UINT,102,0,LINEAR,0,48,Volt/Sec,vsub slew or ramp rate is measured in volts per second

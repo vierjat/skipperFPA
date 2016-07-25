@@ -1,0 +1,22 @@
+[0]
+NEXTEND ='dbs num_ext	    ' /Number of extensions
+FILENAME='dbs imname	    ' /Filename
+PROCTYPE='Raw		    ' /Data processing level   
+PRODTYPE='image		    ' /Data product type 
+PANID   ='dbs nodeID        ' /PAN identification     
+DETSIZE ='dbs fpasize	    ' /Detector size
+PSCINFO ='file PIXSCALE_INFO.tpl ' /pixel scale information file
+UTSHUT  ='queue             ' /UT shutter open
+DHEINFO ='dbs 2DARR DHEINFO ' /template on DHE_INFO.tpl     
+[1]
+EXTNAME ='(STR)	1	    ' / extension name
+BUNIT   ='adu'		    ' /Brightness units for pixel array
+CCDSUM  ='dbs ccdsum        ' / CCD pixel binning
+CCDNUM  ='(I16)	1	    ' / ccd number
+GEOMETRY='queue             ' /template on GEOM_INFO.tpl     
+[2]
+EXTNAME ='(I32)	2	    ' / extension name
+BUNIT   ='adu'		    ' /Brightness units for pixel array
+CCDSUM  ='dbs ccdsum        ' / CCD pixel binning
+CCDNUM  ='(I16)	2	    ' / ccd number
+GEOMETRY='queue             ' /template on GEOM_INFO.tpl     
