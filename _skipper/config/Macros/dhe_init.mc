@@ -41,7 +41,9 @@ memory write 8 none 0x258-0x25d 0
 set autoclear off
 
 #move overscan to the edge
-set modifiers xorder pre pos data
+#set modifiers xorder pre pos data
+
+#macro dhe_read_lowerboth4ch
 
 #start the loop for monitoring defined TestPoints
 TP suscribe

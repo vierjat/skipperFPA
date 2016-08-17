@@ -1,9 +1,9 @@
 [LASTIMG]
-directory=/data/miguel/images/skipper
-basename=IW50_n1_exp600sec_
+directory=/data/javier/trashImages
+basename=a
 froot=/
-imnumber=19
+imnumber=18
 expidcounter=0
 autoid=off
-sufix=_NONE_
-prefix=_NONE_
+sufix=_none_
+prefix=_none_

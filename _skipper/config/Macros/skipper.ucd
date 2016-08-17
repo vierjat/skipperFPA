@@ -1,7 +1,7 @@
 ##
 ## SEQUENCER PATTERN MEMORY SEGMENT
 ## (CHECK THE ADDRESS REFERENCE !!)
-## This file generated from source file skipper.asm on 19-Apr-2016 17:03:25
+## This file generated from source file skipper.asm on 25-Jul-2016 16:33:06
 ## via NOAO MONSOON ASSEMBLER Version 5.0
 ##
 addr=mcbSeqPatMem        # pattern memory address
@@ -50,7 +50,7 @@ addr=mcbSeqPatMem        # pattern memory address
 ##
 ## SEQUENCER PROGRAM MEMORY SEGMENT
 ## (CHECK THE ADDRESS REFERENCE !!)
-## This file generated from source file skipper.asm on 19-Apr-2016 17:03:25
+## This file generated from source file skipper.asm on 25-Jul-2016 16:33:06
 ## via NOAO MONSOON ASSEMBLER Version 5.0
 ##
 addr=mcbSeqPgmMem        # program memory address
