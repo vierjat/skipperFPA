@@ -2140,35 +2140,36 @@ PAT #ERASE_STATE_429   #ERASE_STATE_429      ** 40.000000 volts
 
 * V***** SKIPPER *****V
 
-         ***** [STATE_8_DRAIN]          *     H3 -> HIGH
-         LPP #STATE_8DG
-         LSR #CCDCLK              *     BOARD SELECT = #CCDCLK
+         ***** [STATE_8_DRAIN]    *     
+         LPP #STATE_8DG           *     DRAIN (CLEAN) SN. REMOVE ALL CHARGE
+         LSR #CCDCLK              *     BOARD SELECT = #CCDCLK 
          LRB #POST_H_CLK          *     DELAY = n x 100ns
          LPE
 
-         * ***** [STATE_8]          *     H2 -> LOW
-         * LPP #STATE_8
+         * ***** [STATE_8]          *     
+         * LPP #STATE_8             *     STOP DRAINING SN
          * LSR #CCDCLK              *     BOARD SELECT = #CCDCLK
          * LRB #H_OVERLAP           *     DELAY = n x 100ns
          * LPE
 
          ***** [STATE_10_RESET_SN]            *     RESET SN
-         LPP #STATE_10RG
+         LPP #STATE_10RG          *     RESET SN BEFORE STARTING THE SKIPPER SAMPLING
          LSR #CCDCLK              *     BOARD SELECT = #CCDCLK
          LRB #POST_H_CLK          *     DELAY = n x 100ns
          LPE
 
-*JJJ    LRB #COLBIN                   * BEGIN Loop COLBIN. SKIPPER SAMPLES
     LRB #SHIFT_ROWS                   * BEGIN Loop COLBIN. SKIPPER SAMPLES
 
 
-         ***** [STATE_8_INTEG]          *     H3 -> HIGH
-         LPP #STATE_8
+         ***** [STATE_8_INTEG]    *  
+         LPP #STATE_8             *     STOP RESETING THE SN
          LSR #CCDCLK              *     BOARD SELECT = #CCDCLK
-         LRB #POST_H_CLK          *     DELAY = n x 100ns
+         LRB #POST_H_CLK          *     DELAY = n x 100ns. POST RESET TIME
          LPE
+
+         ***** START OF PEDESTAL INTEGRATION
          ***** [STATE_8A]         *     CDS_RST -> LOW; CDS_DCR -> LOW
-         LPP #STATE_8A
+         LPP #STATE_8A            *     START PEDESTAL INTEGRATION
          LDA #CDSREG              *     REGISTER = CDSREG
          LSR #CCDACQ              *     Write to Video Board
          *DSC #DELAY_100ns         *     DELAY 100 ns
@@ -2189,6 +2190,8 @@ PAT #ERASE_STATE_429   #ERASE_STATE_429      ** 40.000000 volts
          LSR #CCDACQ
          *LRB #PRE_SW
          *LPE
+         ***** END OF PEDESTAL INTEGRATION
+
          ***** [STATE_9]          *     SW -> HIGH
          LPP #STATE_9
          LDA #CLKPORT             *     REGISTER = CLKPORT
@@ -2198,8 +2201,10 @@ PAT #ERASE_STATE_429   #ERASE_STATE_429      ** 40.000000 volts
          ***** [STATE_10]         *     SW -> LOW
          LPP #STATE_10
          LSR #CCDCLK              *     BOARD SELECT = #CCDCLK
-         LRB #POST_SW          *     DELAY = n x 100n
+         LRB #POST_SW             *     DELAY = n x 100n
          LPE
+
+         ***** START OF SIGNAL INTEGRATION
          ***** [STATE_10A]        *     CDS_INT -> HIGH
          LPP #STATE_10A
          LDA #CDSREG              *     REGISTER = CDSREG
@@ -2229,17 +2234,18 @@ PAT #ERASE_STATE_429   #ERASE_STATE_429      ** 40.000000 volts
         * LSR #CCDCLK    * JJJ          *     BOARD SELECT = #CCDCLK
 	     ***** [END LOOP]
         * JJJ LPE                      *   END LOOP
+         ***** END OF SIGNAL INTEGRATION
 
 
-         ***** [STATE_10_CHARGE_BACK]          *     OG -> LOW
+         ***** [STATE_10_CHARGE_BACK]  *     OG -> LOW. 
          LPP #STATE_10OG
-         LSR #CCDCLK              *     BOARD SELECT = #CCDCLK
+         LSR #CCDCLK                   *     BOARD SELECT = #CCDCLK
          LRB #SW_WIDTH
          LPE
-         ***** [STATE_10]            *     OG -> HIGH
+         ***** [STATE_10]              *     OG -> HIGH
          LPP #STATE_10
-         LSR #CCDCLK              *     BOARD SELECT = #CCDCLK
-         LRB #POST_H_CLK          *     DELAY = n x 100ns
+         LSR #CCDCLK                   *     BOARD SELECT = #CCDCLK
+         LRB #POST_H_CLK               *     DELAY = n x 100ns
          LPE
 
          ***** DO WE NEED TO RESET EACH TIME?
@@ -2249,7 +2255,7 @@ PAT #ERASE_STATE_429   #ERASE_STATE_429      ** 40.000000 volts
          LRB #POST_H_CLK          *     DELAY = n x 100ns
          LPE
 
-   LPE                           * END Loop COLBIN. SKIPPER SAMPLES
+   LPE  ************* END Loop COLBIN. SKIPPER SAMPLES
 
    ***** [STATE_9]          *     SW -> HIGH
    LPP #STATE_9
@@ -2260,7 +2266,7 @@ PAT #ERASE_STATE_429   #ERASE_STATE_429      ** 40.000000 volts
 
 
 
-   ***** [STATE_8_INTEG]          *     H3 -> HIGH
+   ***** [STATE_8]          *     H3 -> HIGH
    LPP #STATE_8
    LSR #CCDCLK              *     BOARD SELECT = #CCDCLK
    LRB #POST_H_CLK          *     DELAY = n x 100ns
