@@ -1,9 +1,9 @@
 [LASTIMG]
-directory=/data/javier/trashImages
-basename=a
-froot=/
-imnumber=18
+directory="/home/monsoon/data/trashImages"
+basename="xflexPack"
+froot="/"
+imnumber=239
 expidcounter=0
-autoid=off
-sufix=_none_
-prefix=_none_
+autoid="off"
+sufix="_NONE_"
+prefix="_NONE_"

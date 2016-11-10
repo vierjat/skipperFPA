@@ -605,7 +605,7 @@ DEF #STATE_6    #SK_VCLK_0  OR #SK_OG OR #SK_DG OR #SK_RG OR                    
 DEF #STATE_7    #SK_VCLK_0  OR #SK_OG OR #SK_DG OR #SK_RG OR                      #SK_H3L OR           #SK_H1U
 DEF #STATE_8DG  #SK_VCLK_0  OR #SK_OG OR                               #SK_H3U OR #SK_H3L OR           #SK_H1U OR #SK_H1L
 DEF #STATE_8    #SK_VCLK_0  OR #SK_OG OR #SK_DG OR #SK_RG OR           #SK_H3U OR #SK_H3L OR           #SK_H1U OR #SK_H1L
-DEF #STATE_9    #SK_VCLK_0  OR #SK_OG OR #SK_DG OR #SK_RG OR #SK_SW OR #SK_H3U OR #SK_H3L OR           #SK_H1U OR #SK_H1L
+DEF #STATE_9                   #SK_SW OR #STATE_8 
 DEF #STATE_10   #SK_VCLK_0  OR #SK_OG OR #SK_DG OR #SK_RG OR           #SK_H3U OR #SK_H3L OR           #SK_H1U OR #SK_H1L
 DEF #STATE_10OG #SK_VCLK_0  OR           #SK_DG OR #SK_RG OR           #SK_H3U OR #SK_H3L OR           #SK_H1U OR #SK_H1L
 DEF #STATE_10RG #SK_VCLK_0  OR #SK_OG OR #SK_DG OR        OR           #SK_H3U OR #SK_H3L OR           #SK_H1U OR #SK_H1L
