@@ -2143,7 +2143,7 @@ PAT #ERASE_STATE_429   #ERASE_STATE_429      ** 40.000000 volts
          ***** [STATE_8_DRAIN]    *     
          LPP #STATE_8DG           *     DRAIN (CLEAN) SN. REMOVE ALL CHARGE
          LSR #CCDCLK              *     BOARD SELECT = #CCDCLK 
-         LRB #POST_H_CLK          *     DELAY = n x 100ns
+         LRB #H_OVERLAP           *     DELAY = n x 100ns
          LPE
 
          * ***** [STATE_8]          *     
@@ -2155,7 +2155,7 @@ PAT #ERASE_STATE_429   #ERASE_STATE_429      ** 40.000000 volts
          ***** [STATE_10_RESET_SN]            *     RESET SN
          LPP #STATE_10RG          *     RESET SN BEFORE STARTING THE SKIPPER SAMPLING
          LSR #CCDCLK              *     BOARD SELECT = #CCDCLK
-         LRB #POST_H_CLK          *     DELAY = n x 100ns
+         LRB #H_OVERLAP           *     DELAY = n x 100ns
          LPE
 
     LRB #SHIFT_ROWS                   * BEGIN Loop COLBIN. SKIPPER SAMPLES
