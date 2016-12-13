@@ -582,7 +582,10 @@ DEF #SK_TG   #SK_TGL OR #SK_TGU
 
 * CHARGE ACCUMULATION STATES
 DEF #SK_VCLK_0   #SK_TG  OR #SK_V1  OR #SK_V3
-DEF #SK_HCLK_0   #SK_H1L OR #SK_H1U OR #SK_H3L OR #SK_H3U OR #SK_SW ** SHOULD WE KEEP SW UP?
+** DG connected during charge accumulation  
+** DEF #SK_HCLK_0   #SK_H1L OR #SK_H1U OR #SK_H3L OR #SK_H3U OR #SK_SW ** SHOULD WE KEEP SW UP?
+** Now the DG is only connected when we start and finsh reading each pixel. 
+DEF #SK_HCLK_0   #SK_H1L OR #SK_H1U OR #SK_H3L OR #SK_H3U OR #SK_DG OR #SK_SW ** SHOULD WE KEEP SW UP?
 
 * SHIFT FROM V1 -> V3
 DEF #STATE_11   #SK_HCLK_0  OR #SK_V1 OR           #SK_V3
