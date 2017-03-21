@@ -8,9 +8,9 @@ set obs.obstype
 set obs.exptime 0.000000 [s]
 set obs.nimages 0
 set obs.write true
-set image.number 108
-set image.dir home/monsoon/data/trashImages
-set image.basename zz
+set image.number 122
+set image.dir /home/monsoon/data/trashImages
+set image.basename trash_
 set image.prefix _NONE_
 set image.sufix _NONE_
 set image.froot /

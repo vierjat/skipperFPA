@@ -7,7 +7,7 @@ mcbBkplnSlct=0   # for a 6 slot backplane
 set sampling singframe
 
 # upload sequencer code
-# memory load sequencer file skipper.ucd
+#memory load sequencer file skipper.ucd
 memory load sequencer file skipper_testingCable.ucd
 
 # setup dacs and register values
