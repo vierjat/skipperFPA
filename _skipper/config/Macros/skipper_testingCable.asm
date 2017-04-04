@@ -602,6 +602,7 @@ DEF #STATE_17   #SK_HCLK_0  OR #SK_V1           OR #SK_V3 OR #SK_TG
 **** U1: -> 
 DEF #STATE_0    #SK_VCLK_0  OR #SK_OG OR #SK_DG OR #SK_RG OR           #SK_H3U OR #SK_H3L OR           #SK_H1U OR #SK_H1L 
 DEF #STATE_3    #SK_VCLK_0  OR #SK_OG OR #SK_DG OR #SK_RG OR           #SK_H3U OR                                 #SK_H1L 
+DEF #STATE_3DG  #SK_VCLK_0  OR #SK_OG OR #SK_SW OR #SK_RG OR           #SK_H3U OR                                 #SK_H1L 
 DEF #STATE_4    #SK_VCLK_0  OR #SK_OG OR #SK_DG OR #SK_RG OR           #SK_H3U OR            #SK_H2 OR            #SK_H1L 
 DEF #STATE_5    #SK_VCLK_0  OR #SK_OG OR #SK_DG OR #SK_RG OR                                 #SK_H2
 DEF #STATE_6    #SK_VCLK_0  OR #SK_OG OR #SK_DG OR #SK_RG OR                      #SK_H3L OR #SK_H2 OR #SK_H1U
@@ -741,6 +742,7 @@ PAT #STATE_0A   #STATE_0A
 PAT #STATE_1    #STATE_1
 PAT #STATE_2    #STATE_2
 PAT #STATE_3    #STATE_3
+PAT #STATE_3DG  #STATE_3DG
 PAT #STATE_4    #STATE_4
 PAT #STATE_5    #STATE_5
 PAT #STATE_6    #STATE_6
@@ -2109,11 +2111,18 @@ PAT #ERASE_STATE_429   #ERASE_STATE_429      ** 40.000000 volts
     *     LRB #POST_RG             *     DELAY = n x 100ns
     *	  LPE
 
-         ***** [STATE_3]          *     H1 -> LOW
-         LPP #STATE_3
+         ***** [STATE_3_DRAIN]    *     H1 -> LOW
+         LPP #STATE_3DG
          LSR #CCDCLK              *     Write to CBB Board
          LRB #H_OVERLAP           *     DELAY = n x 100ns
          LPE
+
+*         ***** [STATE_3]          *     H1 -> LOW
+*         LPP #STATE_3
+*         LSR #CCDCLK              *     Write to CBB Board
+*         LRB #H_OVERLAP           *     DELAY = n x 100ns
+*         LPE
+
          ***** [STATE_4]          *     H2 -> HIGH
          LPP #STATE_4
          LSR #CCDCLK              *     Write to CBB Board
@@ -2143,11 +2152,11 @@ PAT #ERASE_STATE_429   #ERASE_STATE_429      ** 40.000000 volts
 
 * V***** SKIPPER *****V
 
-         ***** [STATE_8_DRAIN]    *     
-         LPP #STATE_8DG           *     DRAIN (CLEAN) SN. REMOVE ALL CHARGE
-         LSR #CCDCLK              *     BOARD SELECT = #CCDCLK 
-         LRB #H_OVERLAP           *     DELAY = n x 100ns
-         LPE
+ *        ***** [STATE_8_DRAIN]    *     
+ *        LPP #STATE_8DG           *     DRAIN (CLEAN) SN. REMOVE ALL CHARGE
+ *        LSR #CCDCLK              *     BOARD SELECT = #CCDCLK 
+ *        LRB #H_OVERLAP           *     DELAY = n x 100ns
+ *        LPE
 
          * ***** [STATE_8]          *     
          * LPP #STATE_8             *     STOP DRAINING SN

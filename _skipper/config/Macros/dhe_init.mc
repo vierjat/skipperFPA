@@ -8,7 +8,8 @@ set sampling singframe
 
 # upload sequencer code
 #memory load sequencer file skipper.ucd
-memory load sequencer file skipper_testingCable.ucd
+#memory load sequencer file skipper_testingCable.ucd
+memory load sequencer file skipper_testingCable_3DG.ucd
 
 # setup dacs and register values
 macro decam55_newSetupClr.mod -force

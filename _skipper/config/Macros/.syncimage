@@ -1,9 +1,9 @@
 [LASTIMG]
-directory="/home/monsoon/data/miguel/skipper-quique/20170221-images_IW100_n4000_SENSEIboard_opa209_unJFETCH08_100kCH04_75kCH02-08_20kCH10_thinFilm_withResetAfterEachSpl_POSTSW30_VR-4.5_SW-9_OG-7-120K-FixHU-ExpVar-gaugeOFF-conTapaFria"
-basename="skipper-IW100_n4000_Exp-1200_"
+directory="home/monsoon/data/miguel/skipper-quique/20170330-images_IW100_n4000_SENSEIboard_opa209_unJFETCH08_100kCH04_75kCH02-08_20kCH10_thinFilm_withResetAfterEachSpl_POSTSW30_VR-4.5_SW-9_OG-7-115K-FixHU-ExpVar-gaugeOFF-conTapaFria-SW+DG"
+basename="skipper-IW100_n4000_Exp-1_"
 froot="/"
-imnumber=122
-expidcounter=0
+imnumber=188
+expidcounter=0    
 autoid="off"
 sufix="_NONE_"
 prefix="_NONE_"
